@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
 
-
+```
 - (void)viewDidLoad {
     [super viewDidLoad];
     
