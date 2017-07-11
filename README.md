@@ -21,11 +21,6 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
 };
 
-typedef NS_ENUM(NSInteger, SZTModeDisplay) {
-    SZTModeDisplayNormal,   // 普通模式
-    SZTModeDisplayGlass,    // 分屏模式
-};
-
 typedef NS_ENUM(NSInteger, SZTDistortion) {
     SZTDistortionNormal,   // 无畸变
     SZTBarrelDistortion,   // 桶形畸变模式
@@ -80,6 +75,23 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_GLASSSPHERE,      // 水晶球效果
     SZTVR_CROSSHATCH,       // 法线交叉线
 };
+
+```
+
+# 3、单双屏切换
+```
+typedef NS_ENUM(NSInteger, SZTModeDisplay) {
+    SZTModeDisplayNormal,   // 普通模式
+    SZTModeDisplayGlass,    // 分屏模式
+};
+
+
+/**
+ * 设置单双屏幕模式  － 默认分屏
+ */
+- (void)dispalyMode:(SZTModeDisplay)mode;
+
+[self.SZTLibrary dispalyMode:SZTModeDisplayNormal];
 
 ```
 
