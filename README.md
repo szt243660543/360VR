@@ -5,8 +5,21 @@ This is a small VR library that can quickly help you build VR app.
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
 
-# 0、sdk的入口SZTLibrary.h
-  
+# 如何使用sdk: SZTLibrary.h
+  ```objc
+
+    // create sdk 两种实例话sdk都可以
+    self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
+    
+    or
+    
+    self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
+    
+```
+
+
+# 1、AVPlayer播放器 - 模式切换／滤波器切换
+
 ```objc
 // 渲染模型
 typedef NS_ENUM(NSInteger, SZTRenderModel) {
@@ -42,18 +55,6 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_CROSSHATCH,       // 法线交叉线
 };
 
-```
-
-# 1、AVPlayer播放器 - 模式切换／滤波器切换
-```objc
-
-    // create sdk 两种实例话sdk都可以
-    self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
-    
-    or
-    
-    self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
-    
 ```
 
 ```
