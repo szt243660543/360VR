@@ -97,8 +97,12 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
 # 6、图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
+# 7、Gif / APng动图加载
+
 # 8、Obj模型加载 / MD2模型加载
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
+
+# 9、3D立体音效 - openAl
 
 # 10、畸变矫正
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
@@ -119,6 +123,15 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ```
 
+# 11、Label控件/大量弹幕
+
+# 12、进度条控件
+
+# 13、焦点拾取/点击拾取
+
+# 14、输入框控件
+
+# 15、更多高级控件
 
 
 ## 加入我们
