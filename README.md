@@ -44,6 +44,7 @@ typedef NS_ENUM(NSInteger, SZTSensorMode) {
 
 
 # 1、AVPlayer播放器 - 模式切换／滤波器切换
+# 2、ijkPlayer播放器
 
 ```
 // 渲染模型
@@ -93,27 +94,6 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 # 10、畸变矫正
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
-
-```
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // load md2
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Squelette.md2" ofType:nil];
-    SZTMD2Model * obj1 = [[SZTMD2Model alloc] initWithPath:path];
-    [obj1 setupTextureWithImage:[UIImage imageNamed:@"Squelette.jpg"]];
-    [self.sztLibrary addSubObject:obj1];
-    [obj1 setPosition:10.0 Y:-10.0 Z:-75.0];
-    [obj1 setRotate:-90 radiansY:0 radiansZ:-90];
-    
-    // load obj
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cole.obj" ofType:nil];
-    SZTObjModel * obj1 = [[SZTObjModel alloc] initWithPath:path];
-    [obj1 setupTextureWithImage:[UIImage imageNamed:@"cole.jpeg"]];
-    [self.sztLibrary addSubObject:obj1];
-    [obj1 setPosition:-10.0 Y:0.0 Z:-20.0];
-}
-```
 
 
 
