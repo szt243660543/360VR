@@ -55,25 +55,10 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 ```
 
-```
-- (void)viewDidLoad {
-    [super viewDidLoad];
-     
-    // add avplayer to sdk 
-    NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"skyrim360" ofType:@".mp4"];
-    NSURL *url = [NSURL fileURLWithPath:itemPath];
-    //    NSURL *url = [NSURL URLWithString:@"http://vrkongfu.oss-cn-hangzhou.aliyuncs.com/movie/111mobile.mp4"];
-    
-    self.sztVideo = [[SZTVideo alloc] initAVPlayerVideoWithURL:url VideoMode:SZTVR_SPHERE];
-    self.sztVideo.delegate = self;
-    [self.sztLibrary addSubObject:self.sztVideo];
-}
-```
-
-# 移动／缩放／旋转／贝塞尔
+# 5、移动／缩放／旋转／贝塞尔
 ![image](https://github.com/szt243660543/360VR/blob/master/animation.gif )  </br>
 
-# 图片加载 - 网络／本地图
+# 6、图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
 # 8、Obj模型加载 / MD2模型加载
