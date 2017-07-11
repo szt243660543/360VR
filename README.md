@@ -13,6 +13,32 @@ This is a small VR library that can quickly help you build VR app.
     or
     
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
+    
+typedef NS_ENUM(NSInteger, SZTModeInteractive) {
+    SZTModeInteractiveTouch,            // 触摸
+    SZTModeInteractiveMotion,           // 陀螺仪
+    SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
+};
+
+typedef NS_ENUM(NSInteger, SZTModeDisplay) {
+    SZTModeDisplayNormal,   // 普通模式
+    SZTModeDisplayGlass,    // 分屏模式
+};
+
+typedef NS_ENUM(NSInteger, SZTDistortion) {
+    SZTDistortionNormal,   // 无畸变
+    SZTBarrelDistortion,   // 桶形畸变模式
+};
+
+typedef NS_ENUM(NSInteger, SZTPickingEyes) {
+    SZTbinoculusPicking,   // 双目拾取
+    SZTMonocularPicking,   // 单目拾取
+};
+
+typedef NS_ENUM(NSInteger, SZTSensorMode) {
+    SZTSensorNormal,       // 系统默认处理
+    SZTSensorGvr,          // gvr陀螺仪处理（有跟随缓动效果）
+};
 ```
 
 
