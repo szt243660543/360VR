@@ -8,24 +8,140 @@
 
 /* Begin PBXBuildFile section */
 		E5541A021F14B45500035C20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A011F14B45500035C20 /* AppDelegate.m */; };
-		E5541A051F14B45500035C20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A041F14B45500035C20 /* ViewController.m */; };
-		E5541A081F14B45500035C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5541A061F14B45500035C20 /* Main.storyboard */; };
 		E5541A0A1F14B45500035C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5541A091F14B45500035C20 /* Assets.xcassets */; };
 		E5541A0D1F14B45500035C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5541A0B1F14B45500035C20 /* LaunchScreen.storyboard */; };
 		E5541A101F14B45500035C20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A0F1F14B45500035C20 /* main.m */; };
+		E5541A181F14B4A100035C20 /* SZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A171F14B4A100035C20 /* SZTViewController.m */; };
+		E5541A711F14B75000035C20 /* BaseViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A6E1F14B74500035C20 /* BaseViewControllerDemo.m */; };
+		E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */; };
+		E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */; };
+		E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5F1F14B5B200035C20 /* libz.tbd */; };
+		E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E5E559301F14BB0D008559D8 /* skyrim360.mp4 */; };
+		E5E559351F14C0CF008559D8 /* SZT_IJKPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */; };
+		E5E559381F14C35B008559D8 /* SZT_ModeDisplayDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559361F14C356008559D8 /* SZT_ModeDisplayDemo.m */; };
+		E5E559761F14C493008559D8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
+		E5E559771F14C495008559D8 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
+		E5E559781F14C4A2008559D8 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594A1F14C482008559D8 /* Foundation+Log.m */; };
+		E5E559791F14C4A2008559D8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594C1F14C482008559D8 /* UIView+Extension.m */; };
+		E5E5597A1F14C4A2008559D8 /* action.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594F1F14C482008559D8 /* action.m */; };
+		E5E5597B1F14C4A2008559D8 /* material.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559511F14C482008559D8 /* material.m */; };
+		E5E5597C1F14C4A2008559D8 /* objects.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559531F14C482008559D8 /* objects.m */; };
+		E5E5597D1F14C4A2008559D8 /* properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559551F14C482008559D8 /* properties.m */; };
+		E5E5597E1F14C4A2008559D8 /* scene.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559571F14C482008559D8 /* scene.m */; };
+		E5E5597F1F14C4A2008559D8 /* vrkongfu.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5595A1F14C482008559D8 /* vrkongfu.m */; };
+		E5E559801F14C4A2008559D8 /* widget.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5595C1F14C482008559D8 /* widget.m */; };
+		E5E559811F14C4AF008559D8 /* default_logo.vrkongfu in Resources */ = {isa = PBXBuildFile; fileRef = E5E559721F14C482008559D8 /* default_logo.vrkongfu */; };
+		E5E559821F14C4AF008559D8 /* focus_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E559731F14C482008559D8 /* focus_loading.png */; };
+		E5E559831F14C4AF008559D8 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E559741F14C482008559D8 /* placeholder.png */; };
+		E5E559841F14C4AF008559D8 /* placeholderBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E559751F14C482008559D8 /* placeholderBack.jpg */; };
+		E5E559871F14C530008559D8 /* SZT_ModeInteractiveDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559861F14C4F7008559D8 /* SZT_ModeInteractiveDemo.m */; };
+		E5E5598A1F14C66B008559D8 /* SZT_Animation3DDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559891F14C664008559D8 /* SZT_Animation3DDemo.m */; };
+		E5E5598C1F14C6D8008559D8 /* vrbackbround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5598B1F14C6D1008559D8 /* vrbackbround.jpg */; };
+		E5E5598E1F14C7AA008559D8 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5598D1F14C738008559D8 /* pic.jpg */; };
+		E5E559911F14CAB4008559D8 /* SZT_ImageViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5598F1F14CAAA008559D8 /* SZT_ImageViewDemo.m */; };
+		E5E559941F14CD71008559D8 /* SZT_GifDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559921F14CD6B008559D8 /* SZT_GifDemo.m */; };
+		E5E559961F14CEA2008559D8 /* gifTest.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5E559951F14CE99008559D8 /* gifTest.gif */; };
+		E5E5599B1F14D166008559D8 /* SZT_3DModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5599A1F14D15B008559D8 /* SZT_3DModel.m */; };
+		E5E559A01F14D35A008559D8 /* cole.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5599C1F14D34F008559D8 /* cole.jpeg */; };
+		E5E559A11F14D35A008559D8 /* cole.obj in Resources */ = {isa = PBXBuildFile; fileRef = E5E5599D1F14D34F008559D8 /* cole.obj */; };
+		E5E559A21F14D35A008559D8 /* Squelette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5E5599F1F14D34F008559D8 /* Squelette.jpg */; };
+		E5E559A31F14D35A008559D8 /* Squelette.md2 in Resources */ = {isa = PBXBuildFile; fileRef = E5E5599E1F14D34F008559D8 /* Squelette.md2 */; };
+		E5E559A61F14D3E1008559D8 /* SZT_DistortionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E55419FD1F14B45500035C20 /* VR_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VR_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5541A001F14B45500035C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5541A011F14B45500035C20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5541A031F14B45500035C20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5541A041F14B45500035C20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E5541A071F14B45500035C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5541A091F14B45500035C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5541A0C1F14B45500035C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5541A0E1F14B45500035C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5541A0F1F14B45500035C20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5541A161F14B4A100035C20 /* SZTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTViewController.h; sourceTree = "<group>"; };
+		E5541A171F14B4A100035C20 /* SZTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZTViewController.m; sourceTree = "<group>"; };
+		E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		E5541A5F1F14B5B200035C20 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E5541A6D1F14B74500035C20 /* SZT_AVPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_AVPlayerDemo.h; sourceTree = "<group>"; };
+		E5541A6E1F14B74500035C20 /* BaseViewControllerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewControllerDemo.m; sourceTree = "<group>"; };
+		E5541A6F1F14B74500035C20 /* BaseViewControllerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerDemo.h; sourceTree = "<group>"; };
+		E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_AVPlayerDemo.m; sourceTree = "<group>"; };
+		E5E559301F14BB0D008559D8 /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
+		E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_IJKPlayerDemo.m; sourceTree = "<group>"; };
+		E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_IJKPlayerDemo.h; sourceTree = "<group>"; };
+		E5E559361F14C356008559D8 /* SZT_ModeDisplayDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_ModeDisplayDemo.m; sourceTree = "<group>"; };
+		E5E559371F14C356008559D8 /* SZT_ModeDisplayDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_ModeDisplayDemo.h; sourceTree = "<group>"; };
+		E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		E5E5593D1F14C482008559D8 /* AABB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AABB.h; sourceTree = "<group>"; };
+		E5E5593E1F14C482008559D8 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		E5E5593F1F14C482008559D8 /* MathC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathC.h; sourceTree = "<group>"; };
+		E5E559401F14C482008559D8 /* OBB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBB.h; sourceTree = "<group>"; };
+		E5E559411F14C482008559D8 /* SceneTransitionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneTransitionTool.h; sourceTree = "<group>"; };
+		E5E559421F14C482008559D8 /* SZTCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTCamera.h; sourceTree = "<group>"; };
+		E5E559431F14C482008559D8 /* SZTObject3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTObject3D.h; sourceTree = "<group>"; };
+		E5E559441F14C482008559D8 /* SZTProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTProgram.h; sourceTree = "<group>"; };
+		E5E559451F14C482008559D8 /* SZTTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTTexture.h; sourceTree = "<group>"; };
+		E5E559461F14C482008559D8 /* SZTTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTTouch.h; sourceTree = "<group>"; };
+		E5E559471F14C482008559D8 /* VIMVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIMVideoPlayer.h; sourceTree = "<group>"; };
+		E5E5594A1F14C482008559D8 /* Foundation+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		E5E5594B1F14C482008559D8 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E5E5594C1F14C482008559D8 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		E5E5594E1F14C482008559D8 /* action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = action.h; sourceTree = "<group>"; };
+		E5E5594F1F14C482008559D8 /* action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = action.m; sourceTree = "<group>"; };
+		E5E559501F14C482008559D8 /* material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		E5E559511F14C482008559D8 /* material.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = material.m; sourceTree = "<group>"; };
+		E5E559521F14C482008559D8 /* objects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		E5E559531F14C482008559D8 /* objects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objects.m; sourceTree = "<group>"; };
+		E5E559541F14C482008559D8 /* properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = properties.h; sourceTree = "<group>"; };
+		E5E559551F14C482008559D8 /* properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = properties.m; sourceTree = "<group>"; };
+		E5E559561F14C482008559D8 /* scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		E5E559571F14C482008559D8 /* scene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scene.m; sourceTree = "<group>"; };
+		E5E559581F14C482008559D8 /* SZTJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTJson.h; sourceTree = "<group>"; };
+		E5E559591F14C482008559D8 /* vrkongfu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vrkongfu.h; sourceTree = "<group>"; };
+		E5E5595A1F14C482008559D8 /* vrkongfu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vrkongfu.m; sourceTree = "<group>"; };
+		E5E5595B1F14C482008559D8 /* widget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = widget.h; sourceTree = "<group>"; };
+		E5E5595C1F14C482008559D8 /* widget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = widget.m; sourceTree = "<group>"; };
+		E5E5595D1F14C482008559D8 /* SZTLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTLibrary.h; sourceTree = "<group>"; };
+		E5E5595F1F14C482008559D8 /* ScriptUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptUI.h; sourceTree = "<group>"; };
+		E5E559601F14C482008559D8 /* Sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
+		E5E559611F14C482008559D8 /* SZTAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTAlertView.h; sourceTree = "<group>"; };
+		E5E559621F14C482008559D8 /* SZTAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTAudio.h; sourceTree = "<group>"; };
+		E5E559631F14C482008559D8 /* SZTBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTBaseObject.h; sourceTree = "<group>"; };
+		E5E559641F14C482008559D8 /* SZTGif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTGif.h; sourceTree = "<group>"; };
+		E5E559651F14C482008559D8 /* SZTImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTImageView.h; sourceTree = "<group>"; };
+		E5E559661F14C482008559D8 /* SZTLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTLabel.h; sourceTree = "<group>"; };
+		E5E559671F14C482008559D8 /* SZTMD2Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTMD2Model.h; sourceTree = "<group>"; };
+		E5E559681F14C482008559D8 /* SZTObjModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTObjModel.h; sourceTree = "<group>"; };
+		E5E559691F14C482008559D8 /* SZTParticle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTParticle.h; sourceTree = "<group>"; };
+		E5E5596A1F14C482008559D8 /* SZTPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTPoint.h; sourceTree = "<group>"; };
+		E5E5596B1F14C482008559D8 /* SZTPrograssBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTPrograssBar.h; sourceTree = "<group>"; };
+		E5E5596C1F14C482008559D8 /* SZTRenderObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTRenderObject.h; sourceTree = "<group>"; };
+		E5E5596D1F14C482008559D8 /* SZTShineBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTShineBar.h; sourceTree = "<group>"; };
+		E5E5596E1F14C482008559D8 /* SZTTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTTextView.h; sourceTree = "<group>"; };
+		E5E5596F1F14C482008559D8 /* SZTVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTVideo.h; sourceTree = "<group>"; };
+		E5E559701F14C482008559D8 /* libVRSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVRSDK.a; sourceTree = "<group>"; };
+		E5E559721F14C482008559D8 /* default_logo.vrkongfu */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_logo.vrkongfu; sourceTree = "<group>"; };
+		E5E559731F14C482008559D8 /* focus_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_loading.png; sourceTree = "<group>"; };
+		E5E559741F14C482008559D8 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		E5E559751F14C482008559D8 /* placeholderBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholderBack.jpg; sourceTree = "<group>"; };
+		E5E559851F14C4F7008559D8 /* SZT_ModeInteractiveDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_ModeInteractiveDemo.h; sourceTree = "<group>"; };
+		E5E559861F14C4F7008559D8 /* SZT_ModeInteractiveDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_ModeInteractiveDemo.m; sourceTree = "<group>"; };
+		E5E559881F14C664008559D8 /* SZT_Animation3DDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_Animation3DDemo.h; sourceTree = "<group>"; };
+		E5E559891F14C664008559D8 /* SZT_Animation3DDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_Animation3DDemo.m; sourceTree = "<group>"; };
+		E5E5598B1F14C6D1008559D8 /* vrbackbround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vrbackbround.jpg; sourceTree = "<group>"; };
+		E5E5598D1F14C738008559D8 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
+		E5E5598F1F14CAAA008559D8 /* SZT_ImageViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_ImageViewDemo.m; sourceTree = "<group>"; };
+		E5E559901F14CAAA008559D8 /* SZT_ImageViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_ImageViewDemo.h; sourceTree = "<group>"; };
+		E5E559921F14CD6B008559D8 /* SZT_GifDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_GifDemo.m; sourceTree = "<group>"; };
+		E5E559931F14CD6B008559D8 /* SZT_GifDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_GifDemo.h; sourceTree = "<group>"; };
+		E5E559951F14CE99008559D8 /* gifTest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifTest.gif; sourceTree = "<group>"; };
+		E5E559991F14D15A008559D8 /* SZT_3DModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_3DModel.h; sourceTree = "<group>"; };
+		E5E5599A1F14D15B008559D8 /* SZT_3DModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_3DModel.m; sourceTree = "<group>"; };
+		E5E5599C1F14D34F008559D8 /* cole.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cole.jpeg; sourceTree = "<group>"; };
+		E5E5599D1F14D34F008559D8 /* cole.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = cole.obj; sourceTree = "<group>"; };
+		E5E5599E1F14D34F008559D8 /* Squelette.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Squelette.md2; sourceTree = "<group>"; };
+		E5E5599F1F14D34F008559D8 /* Squelette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Squelette.jpg; sourceTree = "<group>"; };
+		E5E559A41F14D3D7008559D8 /* SZT_DistortionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_DistortionDemo.h; sourceTree = "<group>"; };
+		E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_DistortionDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +149,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E559761F14C493008559D8 /* IJKMediaFramework.framework in Frameworks */,
+				E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */,
+				E5E559771F14C495008559D8 /* libVRSDK.a in Frameworks */,
+				E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +164,7 @@
 			children = (
 				E55419FF1F14B45500035C20 /* VR_Example */,
 				E55419FE1F14B45500035C20 /* Products */,
+				E5541A5D1F14B5AD00035C20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +179,186 @@
 		E55419FF1F14B45500035C20 /* VR_Example */ = {
 			isa = PBXGroup;
 			children = (
+				E5E559391F14C482008559D8 /* vrsdk */,
 				E5541A001F14B45500035C20 /* AppDelegate.h */,
 				E5541A011F14B45500035C20 /* AppDelegate.m */,
-				E5541A031F14B45500035C20 /* ViewController.h */,
-				E5541A041F14B45500035C20 /* ViewController.m */,
-				E5541A061F14B45500035C20 /* Main.storyboard */,
-				E5541A091F14B45500035C20 /* Assets.xcassets */,
+				E5541A161F14B4A100035C20 /* SZTViewController.h */,
+				E5541A171F14B4A100035C20 /* SZTViewController.m */,
+				E5541A6C1F14B68F00035C20 /* Demo */,
+				E5E5592F1F14BAE0008559D8 /* Resources */,
 				E5541A0B1F14B45500035C20 /* LaunchScreen.storyboard */,
 				E5541A0E1F14B45500035C20 /* Info.plist */,
+				E5541A091F14B45500035C20 /* Assets.xcassets */,
 				E5541A0F1F14B45500035C20 /* main.m */,
 			);
 			path = VR_Example;
+			sourceTree = "<group>";
+		};
+		E5541A5D1F14B5AD00035C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5541A5F1F14B5B200035C20 /* libz.tbd */,
+				E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5541A6C1F14B68F00035C20 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E5541A6F1F14B74500035C20 /* BaseViewControllerDemo.h */,
+				E5541A6E1F14B74500035C20 /* BaseViewControllerDemo.m */,
+				E5541A6D1F14B74500035C20 /* SZT_AVPlayerDemo.h */,
+				E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */,
+				E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */,
+				E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */,
+				E5E559371F14C356008559D8 /* SZT_ModeDisplayDemo.h */,
+				E5E559361F14C356008559D8 /* SZT_ModeDisplayDemo.m */,
+				E5E559851F14C4F7008559D8 /* SZT_ModeInteractiveDemo.h */,
+				E5E559861F14C4F7008559D8 /* SZT_ModeInteractiveDemo.m */,
+				E5E559881F14C664008559D8 /* SZT_Animation3DDemo.h */,
+				E5E559891F14C664008559D8 /* SZT_Animation3DDemo.m */,
+				E5E559901F14CAAA008559D8 /* SZT_ImageViewDemo.h */,
+				E5E5598F1F14CAAA008559D8 /* SZT_ImageViewDemo.m */,
+				E5E559931F14CD6B008559D8 /* SZT_GifDemo.h */,
+				E5E559921F14CD6B008559D8 /* SZT_GifDemo.m */,
+				E5E559991F14D15A008559D8 /* SZT_3DModel.h */,
+				E5E5599A1F14D15B008559D8 /* SZT_3DModel.m */,
+				E5E559A41F14D3D7008559D8 /* SZT_DistortionDemo.h */,
+				E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		E5E5592F1F14BAE0008559D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5E559301F14BB0D008559D8 /* skyrim360.mp4 */,
+				E5E5598B1F14C6D1008559D8 /* vrbackbround.jpg */,
+				E5E5598D1F14C738008559D8 /* pic.jpg */,
+				E5E559951F14CE99008559D8 /* gifTest.gif */,
+				E5E5599C1F14D34F008559D8 /* cole.jpeg */,
+				E5E5599D1F14D34F008559D8 /* cole.obj */,
+				E5E5599F1F14D34F008559D8 /* Squelette.jpg */,
+				E5E5599E1F14D34F008559D8 /* Squelette.md2 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5E559391F14C482008559D8 /* vrsdk */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */,
+				E5E5593B1F14C482008559D8 /* include */,
+				E5E559701F14C482008559D8 /* libVRSDK.a */,
+				E5E559711F14C482008559D8 /* Res */,
+			);
+			path = vrsdk;
+			sourceTree = "<group>";
+		};
+		E5E5593B1F14C482008559D8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5593C1F14C482008559D8 /* Base */,
+				E5E559481F14C482008559D8 /* Other */,
+				E5E5595D1F14C482008559D8 /* SZTLibrary.h */,
+				E5E5595E1F14C482008559D8 /* UI */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E5E5593C1F14C482008559D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5593D1F14C482008559D8 /* AABB.h */,
+				E5E5593E1F14C482008559D8 /* Box.h */,
+				E5E5593F1F14C482008559D8 /* MathC.h */,
+				E5E559401F14C482008559D8 /* OBB.h */,
+				E5E559411F14C482008559D8 /* SceneTransitionTool.h */,
+				E5E559421F14C482008559D8 /* SZTCamera.h */,
+				E5E559431F14C482008559D8 /* SZTObject3D.h */,
+				E5E559441F14C482008559D8 /* SZTProgram.h */,
+				E5E559451F14C482008559D8 /* SZTTexture.h */,
+				E5E559461F14C482008559D8 /* SZTTouch.h */,
+				E5E559471F14C482008559D8 /* VIMVideoPlayer.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E5E559481F14C482008559D8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E5E559491F14C482008559D8 /* Categorys */,
+				E5E5594D1F14C482008559D8 /* JsonModel */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E5E559491F14C482008559D8 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5594A1F14C482008559D8 /* Foundation+Log.m */,
+				E5E5594B1F14C482008559D8 /* UIView+Extension.h */,
+				E5E5594C1F14C482008559D8 /* UIView+Extension.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		E5E5594D1F14C482008559D8 /* JsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5594E1F14C482008559D8 /* action.h */,
+				E5E5594F1F14C482008559D8 /* action.m */,
+				E5E559501F14C482008559D8 /* material.h */,
+				E5E559511F14C482008559D8 /* material.m */,
+				E5E559521F14C482008559D8 /* objects.h */,
+				E5E559531F14C482008559D8 /* objects.m */,
+				E5E559541F14C482008559D8 /* properties.h */,
+				E5E559551F14C482008559D8 /* properties.m */,
+				E5E559561F14C482008559D8 /* scene.h */,
+				E5E559571F14C482008559D8 /* scene.m */,
+				E5E559581F14C482008559D8 /* SZTJson.h */,
+				E5E559591F14C482008559D8 /* vrkongfu.h */,
+				E5E5595A1F14C482008559D8 /* vrkongfu.m */,
+				E5E5595B1F14C482008559D8 /* widget.h */,
+				E5E5595C1F14C482008559D8 /* widget.m */,
+			);
+			path = JsonModel;
+			sourceTree = "<group>";
+		};
+		E5E5595E1F14C482008559D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E5E5595F1F14C482008559D8 /* ScriptUI.h */,
+				E5E559601F14C482008559D8 /* Sound.h */,
+				E5E559611F14C482008559D8 /* SZTAlertView.h */,
+				E5E559621F14C482008559D8 /* SZTAudio.h */,
+				E5E559631F14C482008559D8 /* SZTBaseObject.h */,
+				E5E559641F14C482008559D8 /* SZTGif.h */,
+				E5E559651F14C482008559D8 /* SZTImageView.h */,
+				E5E559661F14C482008559D8 /* SZTLabel.h */,
+				E5E559671F14C482008559D8 /* SZTMD2Model.h */,
+				E5E559681F14C482008559D8 /* SZTObjModel.h */,
+				E5E559691F14C482008559D8 /* SZTParticle.h */,
+				E5E5596A1F14C482008559D8 /* SZTPoint.h */,
+				E5E5596B1F14C482008559D8 /* SZTPrograssBar.h */,
+				E5E5596C1F14C482008559D8 /* SZTRenderObject.h */,
+				E5E5596D1F14C482008559D8 /* SZTShineBar.h */,
+				E5E5596E1F14C482008559D8 /* SZTTextView.h */,
+				E5E5596F1F14C482008559D8 /* SZTVideo.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E5E559711F14C482008559D8 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				E5E559721F14C482008559D8 /* default_logo.vrkongfu */,
+				E5E559731F14C482008559D8 /* focus_loading.png */,
+				E5E559741F14C482008559D8 /* placeholder.png */,
+				E5E559751F14C482008559D8 /* placeholderBack.jpg */,
+			);
+			path = Res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +418,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E559A01F14D35A008559D8 /* cole.jpeg in Resources */,
+				E5E559A11F14D35A008559D8 /* cole.obj in Resources */,
+				E5E559A21F14D35A008559D8 /* Squelette.jpg in Resources */,
+				E5E559A31F14D35A008559D8 /* Squelette.md2 in Resources */,
+				E5E559961F14CEA2008559D8 /* gifTest.gif in Resources */,
+				E5E5598E1F14C7AA008559D8 /* pic.jpg in Resources */,
+				E5E5598C1F14C6D8008559D8 /* vrbackbround.jpg in Resources */,
+				E5E559811F14C4AF008559D8 /* default_logo.vrkongfu in Resources */,
+				E5E559821F14C4AF008559D8 /* focus_loading.png in Resources */,
+				E5E559831F14C4AF008559D8 /* placeholder.png in Resources */,
+				E5E559841F14C4AF008559D8 /* placeholderBack.jpg in Resources */,
+				E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */,
 				E5541A0D1F14B45500035C20 /* LaunchScreen.storyboard in Resources */,
 				E5541A0A1F14B45500035C20 /* Assets.xcassets in Resources */,
-				E5541A081F14B45500035C20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +442,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5541A051F14B45500035C20 /* ViewController.m in Sources */,
+				E5E559A61F14D3E1008559D8 /* SZT_DistortionDemo.m in Sources */,
+				E5E5599B1F14D166008559D8 /* SZT_3DModel.m in Sources */,
+				E5E559941F14CD71008559D8 /* SZT_GifDemo.m in Sources */,
+				E5E559911F14CAB4008559D8 /* SZT_ImageViewDemo.m in Sources */,
+				E5E5598A1F14C66B008559D8 /* SZT_Animation3DDemo.m in Sources */,
+				E5E559871F14C530008559D8 /* SZT_ModeInteractiveDemo.m in Sources */,
+				E5E559781F14C4A2008559D8 /* Foundation+Log.m in Sources */,
+				E5E559791F14C4A2008559D8 /* UIView+Extension.m in Sources */,
+				E5E5597A1F14C4A2008559D8 /* action.m in Sources */,
+				E5E5597B1F14C4A2008559D8 /* material.m in Sources */,
+				E5E5597C1F14C4A2008559D8 /* objects.m in Sources */,
+				E5E5597D1F14C4A2008559D8 /* properties.m in Sources */,
+				E5E5597E1F14C4A2008559D8 /* scene.m in Sources */,
+				E5E5597F1F14C4A2008559D8 /* vrkongfu.m in Sources */,
+				E5E559801F14C4A2008559D8 /* widget.m in Sources */,
+				E5E559381F14C35B008559D8 /* SZT_ModeDisplayDemo.m in Sources */,
+				E5E559351F14C0CF008559D8 /* SZT_IJKPlayerDemo.m in Sources */,
+				E5541A711F14B75000035C20 /* BaseViewControllerDemo.m in Sources */,
+				E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */,
 				E5541A101F14B45500035C20 /* main.m in Sources */,
+				E5541A181F14B4A100035C20 /* SZTViewController.m in Sources */,
 				E5541A021F14B45500035C20 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +470,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5541A061F14B45500035C20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5541A071F14B45500035C20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5541A0B1F14B45500035C20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -274,9 +586,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J62AU9PV3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VR_Example/vrsdk",
+					"$(PROJECT_DIR)/vrsdk",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = VR_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marvr.MARVR.VR-Example";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VR_Example/vrsdk",
+					"$(PROJECT_DIR)/vrsdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvr.MARVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,9 +611,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J62AU9PV3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VR_Example/vrsdk",
+					"$(PROJECT_DIR)/vrsdk",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = VR_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marvr.MARVR.VR-Example";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VR_Example/vrsdk",
+					"$(PROJECT_DIR)/vrsdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvr.MARVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +650,7 @@
 				E5541A151F14B45500035C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
