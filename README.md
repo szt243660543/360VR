@@ -6,7 +6,7 @@ This is a small VR library that can quickly help you build VR app.
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
 
 
-# AVPlayer播放器 - 模式切换／滤波器切换
+# 1、AVPlayer播放器 - 模式切换／滤波器切换
 ```objc
 // 渲染模型
 typedef NS_ENUM(NSInteger, SZTRenderModel) {
@@ -68,8 +68,30 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 # 图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
-# Obj模型加载 / MD2模型加载
+# 8、Obj模型加载 / MD2模型加载
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
+
+
+```
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // load md2
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Squelette.md2" ofType:nil];
+    SZTMD2Model * obj1 = [[SZTMD2Model alloc] initWithPath:path];
+    [obj1 setupTextureWithImage:[UIImage imageNamed:@"Squelette.jpg"]];
+    [self.sztLibrary addSubObject:obj1];
+    [obj1 setPosition:10.0 Y:-10.0 Z:-75.0];
+    [obj1 setRotate:-90 radiansY:0 radiansZ:-90];
+    
+    // load obj
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cole.obj" ofType:nil];
+    SZTObjModel * obj1 = [[SZTObjModel alloc] initWithPath:path];
+    [obj1 setupTextureWithImage:[UIImage imageNamed:@"cole.jpeg"]];
+    [self.sztLibrary addSubObject:obj1];
+    [obj1 setPosition:-10.0 Y:0.0 Z:-20.0];
+}
+```
 
 
 
