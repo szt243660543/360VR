@@ -91,6 +91,8 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 # 8、Obj模型加载 / MD2模型加载
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
+# 10、畸变矫正
+![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
 
 ```
 - (void)viewDidLoad {
