@@ -5,9 +5,20 @@ This is a small VR library that can quickly help you build VR app.
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
 
+# 如何使用sdk: SZTLibrary.h
+```
+    // create sdk 两种实例话sdk都可以
+    self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
+    
+    or
+    
+    self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
+```
 
-# AVPlayer播放器 - 模式切换／滤波器切换
-```objc
+
+# 1、AVPlayer播放器 - 模式切换／滤波器切换
+
+```
 // 渲染模型
 typedef NS_ENUM(NSInteger, SZTRenderModel) {
     SZTVR_2D,                                   // 2d
@@ -47,12 +58,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // create sdk 两种实例话sdk都可以
-    self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
-    // self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
-    
-    
+     
     // add avplayer to sdk 
     NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"skyrim360" ofType:@".mp4"];
     NSURL *url = [NSURL fileURLWithPath:itemPath];
@@ -67,6 +73,32 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 # 图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
+
+# 8、Obj模型加载 / MD2模型加载
+![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
+
+
+```
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // load md2
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Squelette.md2" ofType:nil];
+    SZTMD2Model * obj1 = [[SZTMD2Model alloc] initWithPath:path];
+    [obj1 setupTextureWithImage:[UIImage imageNamed:@"Squelette.jpg"]];
+    [self.sztLibrary addSubObject:obj1];
+    [obj1 setPosition:10.0 Y:-10.0 Z:-75.0];
+    [obj1 setRotate:-90 radiansY:0 radiansZ:-90];
+    
+    // load obj
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cole.obj" ofType:nil];
+    SZTObjModel * obj1 = [[SZTObjModel alloc] initWithPath:path];
+    [obj1 setupTextureWithImage:[UIImage imageNamed:@"cole.jpeg"]];
+    [self.sztLibrary addSubObject:obj1];
+    [obj1 setPosition:-10.0 Y:0.0 Z:-20.0];
+}
+```
+
 
 
 ## 加入我们
