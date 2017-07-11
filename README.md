@@ -17,7 +17,7 @@ This is a small VR library that can quickly help you build VR app.
 
 # 1、AVPlayer播放器 - 模式切换／滤波器切换
 # 2、ijkPlayer播放器
-![image](https://github.com/szt243660543/360VR/blob/master/player1.png )![image](https://github.com/szt243660543/360VR/blob/master/player1.png )  </br>
+![image](https://github.com/szt243660543/360VR/blob/master/player1.png )![image](https://github.com/szt243660543/360VR/blob/master/player2.png )  </br>
 
 ```
 // 渲染模型
