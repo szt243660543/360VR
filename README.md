@@ -14,29 +14,6 @@ This is a small VR library that can quickly help you build VR app.
     
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
 ```
-```
-typedef NS_ENUM(NSInteger, SZTModeInteractive) {
-    SZTModeInteractiveTouch,            // 触摸
-    SZTModeInteractiveMotion,           // 陀螺仪
-    SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
-};
-
-typedef NS_ENUM(NSInteger, SZTDistortion) {
-    SZTDistortionNormal,   // 无畸变
-    SZTBarrelDistortion,   // 桶形畸变模式
-};
-
-typedef NS_ENUM(NSInteger, SZTPickingEyes) {
-    SZTbinoculusPicking,   // 双目拾取
-    SZTMonocularPicking,   // 单目拾取
-};
-
-typedef NS_ENUM(NSInteger, SZTSensorMode) {
-    SZTSensorNormal,       // 系统默认处理
-    SZTSensorGvr,          // gvr陀螺仪处理（有跟随缓动效果）
-};
-```
-
 
 # 1、AVPlayer播放器 - 模式切换／滤波器切换
 # 2、ijkPlayer播放器
@@ -91,7 +68,26 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
  */
 - (void)dispalyMode:(SZTModeDisplay)mode;
 
+// 使用方法
 [self.SZTLibrary dispalyMode:SZTModeDisplayNormal];
+
+```
+
+# 4、陀螺仪/触摸屏/陀A触
+```
+typedef NS_ENUM(NSInteger, SZTModeInteractive) {
+    SZTModeInteractiveTouch,            // 触摸
+    SZTModeInteractiveMotion,           // 陀螺仪
+    SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
+};
+
+/**
+ * 设置交互模式  － 默认陀螺仪
+ */
+- (void)interactiveMode:(SZTModeInteractive)mode;
+
+// 使用方法
+[self.SZTLibrary interactiveMode:SZTModeInteractiveMotion];
 
 ```
 
@@ -106,6 +102,22 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
 
 # 10、畸变矫正
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
+
+```
+typedef NS_ENUM(NSInteger, SZTDistortion) {
+    SZTDistortionNormal,   // 无畸变
+    SZTBarrelDistortion,   // 桶形畸变模式
+};
+
+/**
+ * 畸变模式 - 默认无畸变
+ */
+- (void)distortionMode:(SZTDistortion)mode;
+
+// 使用方法
+[self.SZTLibrary distortionMode:SZTDistortionNormal];
+
+```
 
 
 
