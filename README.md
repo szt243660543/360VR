@@ -13,7 +13,8 @@ This is a small VR library that can quickly help you build VR app.
     or
     
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
-    
+```
+```
 typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     SZTModeInteractiveTouch,            // 触摸
     SZTModeInteractiveMotion,           // 陀螺仪
