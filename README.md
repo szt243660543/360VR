@@ -14,36 +14,9 @@ This is a small VR library that can quickly help you build VR app.
     
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
 ```
-```
-typedef NS_ENUM(NSInteger, SZTModeInteractive) {
-    SZTModeInteractiveTouch,            // 触摸
-    SZTModeInteractiveMotion,           // 陀螺仪
-    SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
-};
-
-typedef NS_ENUM(NSInteger, SZTModeDisplay) {
-    SZTModeDisplayNormal,   // 普通模式
-    SZTModeDisplayGlass,    // 分屏模式
-};
-
-typedef NS_ENUM(NSInteger, SZTDistortion) {
-    SZTDistortionNormal,   // 无畸变
-    SZTBarrelDistortion,   // 桶形畸变模式
-};
-
-typedef NS_ENUM(NSInteger, SZTPickingEyes) {
-    SZTbinoculusPicking,   // 双目拾取
-    SZTMonocularPicking,   // 单目拾取
-};
-
-typedef NS_ENUM(NSInteger, SZTSensorMode) {
-    SZTSensorNormal,       // 系统默认处理
-    SZTSensorGvr,          // gvr陀螺仪处理（有跟随缓动效果）
-};
-```
-
 
 # 1、AVPlayer播放器 - 模式切换／滤波器切换
+# 2、ijkPlayer播放器
 
 ```
 // 渲染模型
@@ -82,37 +55,83 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 ```
 
+# 3、单双屏切换
+```
+typedef NS_ENUM(NSInteger, SZTModeDisplay) {
+    SZTModeDisplayNormal,   // 普通模式
+    SZTModeDisplayGlass,    // 分屏模式
+};
+
+
+/**
+ * 设置单双屏幕模式  － 默认分屏
+ */
+- (void)dispalyMode:(SZTModeDisplay)mode;
+
+// 使用方法
+[self.SZTLibrary dispalyMode:SZTModeDisplayNormal];
+
+```
+
+# 4、陀螺仪/触摸屏/陀A触
+```
+typedef NS_ENUM(NSInteger, SZTModeInteractive) {
+    SZTModeInteractiveTouch,            // 触摸
+    SZTModeInteractiveMotion,           // 陀螺仪
+    SZTModeInteractiveMotionWithTouch,  // 陀螺仪和触摸
+};
+
+/**
+ * 设置交互模式  － 默认陀螺仪
+ */
+- (void)interactiveMode:(SZTModeInteractive)mode;
+
+// 使用方法
+[self.SZTLibrary interactiveMode:SZTModeInteractiveMotion];
+
+```
+
 # 5、移动／缩放／旋转／贝塞尔
 ![image](https://github.com/szt243660543/360VR/blob/master/animation.gif )  </br>
 
 # 6、图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
+# 7、Gif / APng动图加载
+
 # 8、Obj模型加载 / MD2模型加载
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
+# 9、3D立体音效 - openAl
+
+# 10、畸变矫正
+![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
 
 ```
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // load md2
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Squelette.md2" ofType:nil];
-    SZTMD2Model * obj1 = [[SZTMD2Model alloc] initWithPath:path];
-    [obj1 setupTextureWithImage:[UIImage imageNamed:@"Squelette.jpg"]];
-    [self.sztLibrary addSubObject:obj1];
-    [obj1 setPosition:10.0 Y:-10.0 Z:-75.0];
-    [obj1 setRotate:-90 radiansY:0 radiansZ:-90];
-    
-    // load obj
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"cole.obj" ofType:nil];
-    SZTObjModel * obj1 = [[SZTObjModel alloc] initWithPath:path];
-    [obj1 setupTextureWithImage:[UIImage imageNamed:@"cole.jpeg"]];
-    [self.sztLibrary addSubObject:obj1];
-    [obj1 setPosition:-10.0 Y:0.0 Z:-20.0];
-}
+typedef NS_ENUM(NSInteger, SZTDistortion) {
+    SZTDistortionNormal,   // 无畸变
+    SZTBarrelDistortion,   // 桶形畸变模式
+};
+
+/**
+ * 畸变模式 - 默认无畸变
+ */
+- (void)distortionMode:(SZTDistortion)mode;
+
+// 使用方法
+[self.SZTLibrary distortionMode:SZTDistortionNormal];
+
 ```
 
+# 11、Label控件/大量弹幕
+
+# 12、进度条控件
+
+# 13、焦点拾取/点击拾取
+
+# 14、输入框控件
+
+# 15、更多高级控件
 
 
 ## 加入我们
