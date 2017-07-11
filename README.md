@@ -70,6 +70,8 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 }
 ```
 
+# 移动／缩放／旋转／贝塞尔
+![image](https://github.com/szt243660543/360VR/blob/master/animation.gif )  </br>
 
 # 图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
