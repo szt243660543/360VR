@@ -107,6 +107,14 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
 # 9、3D立体音效 - openAl
+```
+    SZTAudio * audio = [[SZTAudio alloc] init];
+    
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"sound1" ofType:@"wav"];
+    Sound *sounds = [[Sound alloc] initWithFilePath:path];
+    [audio addSubAudio:sounds];
+    [sounds setPosition:0.0 Y:0.0 Z:-50.0];
+```
 
 # 10、畸变矫正
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
