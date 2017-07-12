@@ -79,7 +79,15 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
 ```
 
 ### 4、陀螺仪/触摸屏/陀&触
+
+sdk集成了gvr处理陀螺仪数据的方法，效果更好。
+
 ```
+typedef NS_ENUM(NSInteger, SZTSensorMode) {
+    SZTSensorNormal,       // 系统默认处理
+    SZTSensorGvr,          // gvr陀螺仪处理（有跟随效果）
+};
+
 typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     SZTModeInteractiveTouch,            // 触摸
     SZTModeInteractiveMotion,           // 陀螺仪
