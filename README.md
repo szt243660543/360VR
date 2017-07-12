@@ -142,6 +142,26 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ### 12、进度条控件
 
 ### 13、焦点拾取/点击拾取
+```
+    // 要使用热点拾取功能，一定需要设置该接口
+    [self.sztLibrary setFocusPicking:YES];
+     
+    // 热点拾取
+    SZTTouch *touch = [[SZTTouch alloc] initWithTouchObject:object];
+    
+    // 拾取的三个状态
+    [touch willTouchCallBack:^(GLKVector3 vec) {
+        NSLog(@"will select");
+    }];
+    
+    [touch didTouchCallback:^(GLKVector3 vec) {
+        NSLog(@"select");
+    }];
+    
+    [touch endTouchCallback:^(GLKVector3 vec) {
+        NSLog(@"will leave");
+    }];
+```
 
 ### 14、输入框控件
 
