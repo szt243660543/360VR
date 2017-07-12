@@ -6,7 +6,7 @@ This is a small VR library that can quickly help you build VR app.
 不支持模拟器，请在真机下测试。（模拟器下会报错）
 
 # Example Preview
-![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
+![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
 
 # 如何使用vrsdk
     SZTLibrary.h 类   
