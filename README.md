@@ -10,23 +10,23 @@ not support the simulator,Please run on a real machine. (the simulator will make
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )![image](https://github.com/szt243660543/360VR/blob/master/vr%E5%AF%BC%E8%88%AA.jpg )
 
-# 如何使用vrsdk  - 查看：GongFu SDK 1.14.pdf文档
-    SZTLibrary.h 类   
+# How to use vr sdk?  - See：GongFu SDK 1.14.pdf
+    SZTLibrary.h
 ```
-    // create sdk 两种实例方法都可以
+    // create sdk based on Controller
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     
     or
-    
+    // create sdk based on view
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
 ```
 
-### 1、AVPlayer播放器 - 模式切换／滤波器切换
-### 2、ijkPlayer播放器
+### 1、AVPlayer - 模式切换／滤波器切换
+### 2、ijkPlayer
 ![image](https://github.com/szt243660543/360VR/blob/master/player1.png )![image](https://github.com/szt243660543/360VR/blob/master/player2.jpg )  </br>
 
 ```
-// 渲染模型
+// Render Model
 typedef NS_ENUM(NSInteger, SZTRenderModel) {
     SZTVR_2D,                                   // 2d
     SZTVR_SPHERE,                               // 全景
@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, SZTRenderModel) {
     SZTVR_SECTOR,                               // 扇形曲面 - 平滑曲面
 };
 
+// Filter Mode
 typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_NORMAL,           // 普通
     SZTVR_LUMINANCE,        // 像素色值亮度平均，图像黑白 (黑白效果)
@@ -62,7 +63,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 ```
 
-### 3、单双屏切换
+### 3、单双屏切换 
 ```
 typedef NS_ENUM(NSInteger, SZTModeDisplay) {
     SZTModeDisplayNormal,   // 普通模式
@@ -80,7 +81,7 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
 
 ```
 
-### 4、陀螺仪/触摸屏/陀&触
+### 4、陀螺仪/触摸/陀&触 (gyroscope or touch)
 
 sdk集成了gvr处理陀螺仪数据的方法，效果更好。
 
@@ -106,18 +107,18 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
 
 ```
 
-### 5、移动／缩放／旋转／贝塞尔
+### 5、移动／缩放／旋转／贝塞尔 (animation - moveTo/scaleTo/rotateTo/bezierTo)
 ![image](https://github.com/szt243660543/360VR/blob/master/animation.gif )  </br>
 
-### 6、图片加载 - 网络／本地图
+### 6、图片加载 - 网络／本地图 (load image by local path or url)
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
-### 7、Gif / APng动图加载
+### 7、Gif / APng动图加载 (load gif or aPng)
 
-### 8、Obj模型加载 / MD2模型加载
+### 8、Obj模型加载 / MD2模型加载 (load Obj model or MD2 model)
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
-### 9、3D立体音效 - openAl
+### 9、3D立体音效 - openAl (3d sound, use openAl)
 ```
     SZTAudio * audio = [[SZTAudio alloc] init];
     
@@ -127,7 +128,7 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     [sounds setPosition:0.0 Y:0.0 Z:-50.0];
 ```
 
-### 10、畸变矫正
+### 10、畸变矫正 (distortion correction)
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
 
 ```
@@ -146,12 +147,12 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ```
 
-### 11、Label控件/大量弹幕
+### 11、Label控件/大量弹幕 (load label, barrage)
 ![image](https://github.com/szt243660543/360VR/blob/master/label.gif )  </br>
 
-### 12、进度条控件
+### 12、进度条控件 （load Progress bar）
 
-### 13、焦点拾取/点击拾取
+### 13、焦点拾取/点击拾取 （ray picking/touch picking）
 ```
     // 要使用热点拾取功能，一定需要设置该接口
     [self.sztLibrary setFocusPicking:YES];
@@ -173,10 +174,10 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
     }];
 ```
 
-### 14、输入框控件
+### 14、输入框控件 (keyboard bar)
 ![image](https://github.com/szt243660543/360VR/blob/master/keyboard.jpg )  </br>
 
-### 15、更多高级控件
+### 15、更多高级控件 (more)
 
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
