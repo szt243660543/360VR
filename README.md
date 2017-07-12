@@ -10,7 +10,7 @@ This is a small VR library that can quickly help you build VR app.
 
 # 如何使用sdk: SZTLibrary.h
 ```
-    // create sdk 两种实例话sdk都可以
+    // create sdk 两种实例方法都可以
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     
     or
