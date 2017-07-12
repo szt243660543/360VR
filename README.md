@@ -8,10 +8,9 @@ This is a small VR library that can quickly help you build VR app.
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
 
-# 如何使用sdk: 
+# 如何使用vrsdk
+    SZTLibrary.h 类   
 ```
-    SZTLibrary.h
-    
     // create sdk 两种实例方法都可以
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     
