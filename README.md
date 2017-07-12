@@ -21,7 +21,7 @@ not support the simulator,Please run on a real machine. (the simulator will make
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
 ```
 
-### 1、AVPlayer - 模式切换／滤波器切换
+### 1、AVPlayer - 模式切换／滤波器切换 (change Render Model/change Filter)
 ### 2、ijkPlayer
 ![image](https://github.com/szt243660543/360VR/blob/master/player1.png )![image](https://github.com/szt243660543/360VR/blob/master/player2.jpg )  </br>
 
@@ -182,7 +182,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
 
-# 加入我们
+# Join us
 我们会不定期的更新sdk，加入更多新功能，大家有新的需要或好的想法，欢迎大家加入群一起讨论。
 * 邮箱 :szt243660543@sina.com
 * QQ 群 :174962747
