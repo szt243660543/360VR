@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
     // 要使用热点拾取功能，一定需要设置该接口
     [self.sztLibrary setFocusPicking:YES];
      
-    // 热点拾取   object为要被拾取的对象
+    // 热点拾取方法   object为要被拾取的对象
     SZTTouch *touch = [[SZTTouch alloc] initWithTouchObject:object];
     
     // 拾取的三个状态
