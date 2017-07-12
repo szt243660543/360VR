@@ -1,4 +1,3 @@
-[![patreon_logo](https://cloud.githubusercontent.com/assets/1029673/23074410/8c248822-f530-11e6-9156-aeef1262be86.png)](http://www.vrkongfu.com/)
 # 360 VR
 This is a small VR library that can quickly help you build VR app. 
 (As the project contains the ijkplayer, so the project a little big, please be patient to download!)(About 150Mb)
@@ -182,6 +181,5 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 # 加入我们
 我们会不定期的更新sdk，加入更多新功能，大家有新的需要或好的想法，欢迎大家加入群一起讨论。
-|---------------|---------------|
-|* 邮箱 |szt243660543@sina.com|
-|* QQ 群 |174962747|
+* 邮箱 :szt243660543@sina.com
+* QQ 群 :174962747
