@@ -29,7 +29,7 @@
     
     // 背景图
     SZTImageView * back = [[SZTImageView alloc] initWithMode:SZTVR_SPHERE];
-    [back setupTextureWithImage:[UIImage imageNamed:@"vrbackbround.jpg.jpg"]];
+    [back setupTextureWithImage:[UIImage imageNamed:@"vrbackbround.jpg"]];
     [self.SZTLibrary addSubObject:back];
 }
 

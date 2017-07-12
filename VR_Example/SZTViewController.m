@@ -19,6 +19,7 @@
 #import "SZT_3DAudio.h"
 #import "SZT_LabelDemo.h"
 #import "SZT_TouchDemo.h"
+#import "SZT_TextViewDemo.h"
 
 @interface SZTViewController ()
 
@@ -130,7 +131,8 @@
         SZT_TouchDemo *touch = [[SZT_TouchDemo alloc] init];
         [self presentViewController:touch animated:YES completion:nil];
     }else if (indexPath.row == 14){
-        
+        SZT_TextViewDemo *input = [[SZT_TextViewDemo alloc] init];
+        [self presentViewController:input animated:YES completion:nil];
     }else if (indexPath.row == 15){
         
     }
