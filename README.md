@@ -164,6 +164,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ```
 
 ### 14、输入框控件
+![image](https://github.com/szt243660543/360VR/blob/master/keyboard.jpg )  </br>
 
 ### 15、更多高级控件
 
