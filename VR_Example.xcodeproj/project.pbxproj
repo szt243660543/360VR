@@ -19,6 +19,7 @@
 		E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
 		E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
 		E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */; };
+		E5BDCDDE1F15E55D006F5749 /* SZT_TouchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BDCDDD1F15E55D006F5749 /* SZT_TouchDemo.m */; };
 		E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */; };
 		E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5F1F14B5B200035C20 /* libz.tbd */; };
 		E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E5E559301F14BB0D008559D8 /* skyrim360.mp4 */; };
@@ -75,6 +76,8 @@
 		E56DF8881F15C5A600780FCC /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_LabelDemo.h; sourceTree = "<group>"; };
 		E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_LabelDemo.m; sourceTree = "<group>"; };
+		E5BDCDDC1F15E55D006F5749 /* SZT_TouchDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_TouchDemo.h; sourceTree = "<group>"; };
+		E5BDCDDD1F15E55D006F5749 /* SZT_TouchDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_TouchDemo.m; sourceTree = "<group>"; };
 		E5E559301F14BB0D008559D8 /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
 		E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_IJKPlayerDemo.m; sourceTree = "<group>"; };
 		E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_IJKPlayerDemo.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				E56DF8851F15C45100780FCC /* SZT_3DAudio.m */,
 				E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */,
 				E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */,
+				E5BDCDDC1F15E55D006F5749 /* SZT_TouchDemo.h */,
+				E5BDCDDD1F15E55D006F5749 /* SZT_TouchDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 				E5E559781F14C4A2008559D8 /* Foundation+Log.m in Sources */,
 				E5E559791F14C4A2008559D8 /* UIView+Extension.m in Sources */,
 				E5E5597A1F14C4A2008559D8 /* action.m in Sources */,
+				E5BDCDDE1F15E55D006F5749 /* SZT_TouchDemo.m in Sources */,
 				E5E5597B1F14C4A2008559D8 /* material.m in Sources */,
 				E5E5597C1F14C4A2008559D8 /* objects.m in Sources */,
 				E5E5597D1F14C4A2008559D8 /* properties.m in Sources */,

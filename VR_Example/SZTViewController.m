@@ -18,6 +18,7 @@
 #import "SZT_DistortionDemo.h"
 #import "SZT_3DAudio.h"
 #import "SZT_LabelDemo.h"
+#import "SZT_TouchDemo.h"
 
 @interface SZTViewController ()
 
@@ -126,7 +127,8 @@
     }else if (indexPath.row == 12){
         
     }else if (indexPath.row == 13){
-        
+        SZT_TouchDemo *touch = [[SZT_TouchDemo alloc] init];
+        [self presentViewController:touch animated:YES completion:nil];
     }else if (indexPath.row == 14){
         
     }else if (indexPath.row == 15){
