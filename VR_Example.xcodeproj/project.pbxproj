@@ -18,6 +18,7 @@
 		E56DF8891F15C5AF00780FCC /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E56DF8881F15C5A600780FCC /* sound.mp3 */; };
 		E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
 		E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
+		E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */; };
 		E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */; };
 		E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5F1F14B5B200035C20 /* libz.tbd */; };
 		E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E5E559301F14BB0D008559D8 /* skyrim360.mp4 */; };
@@ -72,6 +73,8 @@
 		E56DF8851F15C45100780FCC /* SZT_3DAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_3DAudio.m; sourceTree = "<group>"; };
 		E56DF8861F15C45100780FCC /* SZT_3DAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_3DAudio.h; sourceTree = "<group>"; };
 		E56DF8881F15C5A600780FCC /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_LabelDemo.h; sourceTree = "<group>"; };
+		E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_LabelDemo.m; sourceTree = "<group>"; };
 		E5E559301F14BB0D008559D8 /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
 		E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_IJKPlayerDemo.m; sourceTree = "<group>"; };
 		E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_IJKPlayerDemo.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */,
 				E56DF8861F15C45100780FCC /* SZT_3DAudio.h */,
 				E56DF8851F15C45100780FCC /* SZT_3DAudio.m */,
+				E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */,
+				E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */,
 				E5541A101F14B45500035C20 /* main.m in Sources */,
 				E5541A181F14B4A100035C20 /* SZTViewController.m in Sources */,
+				E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */,
 				E5541A021F14B45500035C20 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

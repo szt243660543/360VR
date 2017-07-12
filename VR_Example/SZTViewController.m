@@ -17,6 +17,7 @@
 #import "SZT_3DModel.h"
 #import "SZT_DistortionDemo.h"
 #import "SZT_3DAudio.h"
+#import "SZT_LabelDemo.h"
 
 @interface SZTViewController ()
 
@@ -120,7 +121,8 @@
         SZT_DistortionDemo *distortion = [[SZT_DistortionDemo alloc] init];
         [self presentViewController:distortion animated:YES completion:nil];
     }else if(indexPath.row == 11){
-        
+        SZT_LabelDemo *label = [[SZT_LabelDemo alloc] init];
+        [self presentViewController:label animated:YES completion:nil];
     }else if (indexPath.row == 12){
         
     }else if (indexPath.row == 13){
