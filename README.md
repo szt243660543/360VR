@@ -183,6 +183,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
 
 # Join us
-我们会不定期的更新sdk，加入更多新功能，大家有新的需要或好的想法，欢迎大家加入群一起讨论。
+我们会不定期的更新sdk，加入更多新功能，大家有新的需要或好的想法，欢迎大家加入群一起讨论。</br>
+We will update SDK regularly.Welcome to join the group for discussion.
 * 邮箱 :szt243660543@sina.com
 * QQ 群 :174962747
