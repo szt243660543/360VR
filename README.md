@@ -8,7 +8,7 @@ This is a small VR library that can quickly help you build VR app.
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )![image](https://github.com/szt243660543/360VR/blob/master/vr%E5%AF%BC%E8%88%AA.jpg )
 
-# 如何使用vrsdk
+# 如何使用vrsdk  - 查看：GongFu SDK 1.14.pdf文档
     SZTLibrary.h 类   
 ```
     // create sdk 两种实例方法都可以
