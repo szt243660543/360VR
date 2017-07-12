@@ -8,7 +8,7 @@ This is a small VR library that can quickly help you build VR app.
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
 
-# 如何使用sdk: SZTLibrary.h
+### 如何使用sdk: SZTLibrary.h
 ```
     // create sdk 两种实例方法都可以
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
@@ -18,8 +18,8 @@ This is a small VR library that can quickly help you build VR app.
     self.sztLibrary = [[SZTLibrary alloc] initWithView:self.view];
 ```
 
-# 1、AVPlayer播放器 - 模式切换／滤波器切换
-# 2、ijkPlayer播放器
+### 1、AVPlayer播放器 - 模式切换／滤波器切换
+### 2、ijkPlayer播放器
 ![image](https://github.com/szt243660543/360VR/blob/master/player1.png )![image](https://github.com/szt243660543/360VR/blob/master/player2.jpg )  </br>
 
 ```
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 
 ```
 
-# 3、单双屏切换
+### 3、单双屏切换
 ```
 typedef NS_ENUM(NSInteger, SZTModeDisplay) {
     SZTModeDisplayNormal,   // 普通模式
@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
 
 ```
 
-# 4、陀螺仪/触摸屏/陀&触
+### 4、陀螺仪/触摸屏/陀&触
 ```
 typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     SZTModeInteractiveTouch,            // 触摸
@@ -95,18 +95,18 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
 
 ```
 
-# 5、移动／缩放／旋转／贝塞尔
+### 5、移动／缩放／旋转／贝塞尔
 ![image](https://github.com/szt243660543/360VR/blob/master/animation.gif )  </br>
 
-# 6、图片加载 - 网络／本地图
+### 6、图片加载 - 网络／本地图
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
-# 7、Gif / APng动图加载
+### 7、Gif / APng动图加载
 
-# 8、Obj模型加载 / MD2模型加载
+### 8、Obj模型加载 / MD2模型加载
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
 
-# 9、3D立体音效 - openAl
+### 9、3D立体音效 - openAl
 ```
     SZTAudio * audio = [[SZTAudio alloc] init];
     
@@ -116,7 +116,7 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     [sounds setPosition:0.0 Y:0.0 Z:-50.0];
 ```
 
-# 10、畸变矫正
+### 10、畸变矫正
 ![image](https://github.com/szt243660543/360VR/blob/master/jibian.jpg )  </br>
 
 ```
@@ -135,12 +135,12 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ```
 
-# 11、Label控件/大量弹幕
+### 11、Label控件/大量弹幕
 ![image](https://github.com/szt243660543/360VR/blob/master/label.gif )  </br>
 
-# 12、进度条控件
+### 12、进度条控件
 
-# 13、焦点拾取/点击拾取
+### 13、焦点拾取/点击拾取
 
 ### 14、输入框控件
 
