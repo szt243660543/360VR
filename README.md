@@ -6,7 +6,7 @@ This is a small VR library that can quickly help you build VR app.
 不支持模拟器，请在真机下测试。（模拟器下会报错）
 
 # Example Preview
-![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
+![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )
 
 # 如何使用vrsdk
     SZTLibrary.h 类   
@@ -168,6 +168,8 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ### 15、更多高级控件
 
+# AR 
+![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
 
 # 加入我们
 我们会不定期的更新sdk，加入更多新功能，大家有新的需要或好的想法，欢迎大家加入群一起讨论。
