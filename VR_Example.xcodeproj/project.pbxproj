@@ -14,13 +14,15 @@
 		E5541A181F14B4A100035C20 /* SZTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A171F14B4A100035C20 /* SZTViewController.m */; };
 		E5541A711F14B75000035C20 /* BaseViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A6E1F14B74500035C20 /* BaseViewControllerDemo.m */; };
 		E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */; };
+		E56DF8871F15C46200780FCC /* SZT_3DAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DF8851F15C45100780FCC /* SZT_3DAudio.m */; };
+		E56DF8891F15C5AF00780FCC /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E56DF8881F15C5A600780FCC /* sound.mp3 */; };
+		E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
+		E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
 		E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */; };
 		E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5F1F14B5B200035C20 /* libz.tbd */; };
 		E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E5E559301F14BB0D008559D8 /* skyrim360.mp4 */; };
 		E5E559351F14C0CF008559D8 /* SZT_IJKPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */; };
 		E5E559381F14C35B008559D8 /* SZT_ModeDisplayDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E559361F14C356008559D8 /* SZT_ModeDisplayDemo.m */; };
-		E5E559761F14C493008559D8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
-		E5E559771F14C495008559D8 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
 		E5E559781F14C4A2008559D8 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594A1F14C482008559D8 /* Foundation+Log.m */; };
 		E5E559791F14C4A2008559D8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594C1F14C482008559D8 /* UIView+Extension.m */; };
 		E5E5597A1F14C4A2008559D8 /* action.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E5594F1F14C482008559D8 /* action.m */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5176A561F15CA8A00A94F78 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E5176A581F15CA9100A94F78 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		E55419FD1F14B45500035C20 /* VR_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VR_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5541A001F14B45500035C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5541A011F14B45500035C20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +69,9 @@
 		E5541A6E1F14B74500035C20 /* BaseViewControllerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewControllerDemo.m; sourceTree = "<group>"; };
 		E5541A6F1F14B74500035C20 /* BaseViewControllerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerDemo.h; sourceTree = "<group>"; };
 		E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_AVPlayerDemo.m; sourceTree = "<group>"; };
+		E56DF8851F15C45100780FCC /* SZT_3DAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_3DAudio.m; sourceTree = "<group>"; };
+		E56DF8861F15C45100780FCC /* SZT_3DAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_3DAudio.h; sourceTree = "<group>"; };
+		E56DF8881F15C5A600780FCC /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		E5E559301F14BB0D008559D8 /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
 		E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_IJKPlayerDemo.m; sourceTree = "<group>"; };
 		E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_IJKPlayerDemo.h; sourceTree = "<group>"; };
@@ -149,9 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E559761F14C493008559D8 /* IJKMediaFramework.framework in Frameworks */,
+				E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */,
+				E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */,
 				E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */,
-				E5E559771F14C495008559D8 /* libVRSDK.a in Frameworks */,
 				E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +204,8 @@
 		E5541A5D1F14B5AD00035C20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5176A581F15CA9100A94F78 /* OpenAL.framework */,
+				E5176A561F15CA8A00A94F78 /* OpenGLES.framework */,
 				E5541A5F1F14B5B200035C20 /* libz.tbd */,
 				E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */,
 			);
@@ -226,6 +235,8 @@
 				E5E5599A1F14D15B008559D8 /* SZT_3DModel.m */,
 				E5E559A41F14D3D7008559D8 /* SZT_DistortionDemo.h */,
 				E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */,
+				E56DF8861F15C45100780FCC /* SZT_3DAudio.h */,
+				E56DF8851F15C45100780FCC /* SZT_3DAudio.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 				E5E5599D1F14D34F008559D8 /* cole.obj */,
 				E5E5599F1F14D34F008559D8 /* Squelette.jpg */,
 				E5E5599E1F14D34F008559D8 /* Squelette.md2 */,
+				E56DF8881F15C5A600780FCC /* sound.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -418,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56DF8891F15C5AF00780FCC /* sound.mp3 in Resources */,
 				E5E559A01F14D35A008559D8 /* cole.jpeg in Resources */,
 				E5E559A11F14D35A008559D8 /* cole.obj in Resources */,
 				E5E559A21F14D35A008559D8 /* Squelette.jpg in Resources */,
@@ -442,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56DF8871F15C46200780FCC /* SZT_3DAudio.m in Sources */,
 				E5E559A61F14D3E1008559D8 /* SZT_DistortionDemo.m in Sources */,
 				E5E5599B1F14D166008559D8 /* SZT_3DModel.m in Sources */,
 				E5E559941F14CD71008559D8 /* SZT_GifDemo.m in Sources */,
@@ -584,22 +598,23 @@
 		E5541A141F14B45500035C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J62AU9PV3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VR_Example/vrsdk",
-					"$(PROJECT_DIR)/vrsdk",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = VR_Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VR_Example/vrsdk",
-					"$(PROJECT_DIR)/vrsdk",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvr.MARVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,22 +624,23 @@
 		E5541A151F14B45500035C20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J62AU9PV3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VR_Example/vrsdk",
-					"$(PROJECT_DIR)/vrsdk",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = VR_Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VR_Example/vrsdk",
-					"$(PROJECT_DIR)/vrsdk",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marvr.MARVR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

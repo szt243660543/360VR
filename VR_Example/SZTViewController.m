@@ -16,6 +16,7 @@
 #import "SZT_GifDemo.h"
 #import "SZT_3DModel.h"
 #import "SZT_DistortionDemo.h"
+#import "SZT_3DAudio.h"
 
 @interface SZTViewController ()
 
@@ -113,7 +114,8 @@
         SZT_3DModel *modeldemo = [[SZT_3DModel alloc] init];
         [self presentViewController:modeldemo animated:YES completion:nil];
     }else if(indexPath.row == 9){
-        
+        SZT_3DAudio *audiodemo = [[SZT_3DAudio alloc] init];
+        [self presentViewController:audiodemo animated:YES completion:nil];
     }else if(indexPath.row == 10){
         SZT_DistortionDemo *distortion = [[SZT_DistortionDemo alloc] init];
         [self presentViewController:distortion animated:YES completion:nil];
