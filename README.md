@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, SZTModeDisplay) {
 
 ```
 
-# 4、陀螺仪/触摸屏/陀A触
+# 4、陀螺仪/触摸屏/陀&触
 ```
 typedef NS_ENUM(NSInteger, SZTModeInteractive) {
     SZTModeInteractiveTouch,            // 触摸
