@@ -136,6 +136,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ```
 
 # 11、Label控件/大量弹幕
+![image](https://github.com/szt243660543/360VR/blob/master/label.gif )  </br>
 
 # 12、进度条控件
 
