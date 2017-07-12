@@ -1,6 +1,9 @@
 # 360 VR
 This is a small VR library that can quickly help you build VR app. 
-(As the project contains the ijkplayer, so the project alittle big, please be patient to download!)(90Mb)
+(As the project contains the ijkplayer, so the project a little big, please be patient to download!)(90Mb)
+
+# warning
+不支持模拟器，请在真机下测试。（模拟器下会报错）
 
 # Example Preview
 ![image](https://github.com/szt243660543/360VR/blob/master/VR_Example/allexample.png )   
