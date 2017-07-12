@@ -116,6 +116,7 @@
 		E5BDCEA21F162CA3006F5749 /* n_7.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BDCE431F162CA3006F5749 /* n_7.png */; };
 		E5BDCEA31F162CA3006F5749 /* n_8.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BDCE441F162CA3006F5749 /* n_8.png */; };
 		E5BDCEA41F162CA3006F5749 /* n_9.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BDCE451F162CA3006F5749 /* n_9.png */; };
+		E5BDCEA61F162D4B006F5749 /* inputbox.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BDCEA51F162D4B006F5749 /* inputbox.png */; };
 		E5E558981F14B8F7008559D8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5E1F14B5AD00035C20 /* VideoToolbox.framework */; };
 		E5E558991F14B8FD008559D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5541A5F1F14B5B200035C20 /* libz.tbd */; };
 		E5E559311F14BB1F008559D8 /* skyrim360.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E5E559301F14BB0D008559D8 /* skyrim360.mp4 */; };
@@ -272,6 +273,7 @@
 		E5BDCE431F162CA3006F5749 /* n_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n_7.png; sourceTree = "<group>"; };
 		E5BDCE441F162CA3006F5749 /* n_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n_8.png; sourceTree = "<group>"; };
 		E5BDCE451F162CA3006F5749 /* n_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n_9.png; sourceTree = "<group>"; };
+		E5BDCEA51F162D4B006F5749 /* inputbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inputbox.png; sourceTree = "<group>"; };
 		E5E559301F14BB0D008559D8 /* skyrim360.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skyrim360.mp4; sourceTree = "<group>"; };
 		E5E559331F14C0BA008559D8 /* SZT_IJKPlayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_IJKPlayerDemo.m; sourceTree = "<group>"; };
 		E5E559341F14C0BA008559D8 /* SZT_IJKPlayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_IJKPlayerDemo.h; sourceTree = "<group>"; };
@@ -703,6 +705,7 @@
 				E5E559731F14C482008559D8 /* focus_loading.png */,
 				E5E559741F14C482008559D8 /* placeholder.png */,
 				E5E559751F14C482008559D8 /* placeholderBack.jpg */,
+				E5BDCEA51F162D4B006F5749 /* inputbox.png */,
 			);
 			path = Res;
 			sourceTree = "<group>";
@@ -855,6 +858,7 @@
 				E5BDCE9F1F162CA3006F5749 /* n_4.png in Resources */,
 				E5BDCE691F162CA3006F5749 /* s_10.png in Resources */,
 				E5BDCE991F162CA3006F5749 /* n_26.png in Resources */,
+				E5BDCEA61F162D4B006F5749 /* inputbox.png in Resources */,
 				E5BDCE5A1F162CA3006F5749 /* b_27.png in Resources */,
 				E5BDCEA21F162CA3006F5749 /* n_7.png in Resources */,
 				E5BDCE5C1F162CA3006F5749 /* b_29.png in Resources */,
