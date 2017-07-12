@@ -1,4 +1,4 @@
-[![patreon_logo](https://cloud.githubusercontent.com/assets/1029673/23074410/8c248822-f530-11e6-9156-aeef1262be86.png)](https://www.patreon.com/vrtk)
+[![patreon_logo](https://cloud.githubusercontent.com/assets/1029673/23074410/8c248822-f530-11e6-9156-aeef1262be86.png)](http://www.vrkongfu.com/)
 # 360 VR
 This is a small VR library that can quickly help you build VR app. 
 (As the project contains the ijkplayer, so the project a little big, please be patient to download!)(About 150Mb)
