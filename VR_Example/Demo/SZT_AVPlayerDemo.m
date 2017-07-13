@@ -77,7 +77,6 @@
         [self.sztVideo setObjectSize:512.0 Height:256.0];
         [self.sztVideo setPosition:0.0 Y:0.0 Z:-15.0];
     }else{
-        [self.sztVideo setObjectSize:2.0 Height:2.0];
         [self.sztVideo setPosition:0.0 Y:0.0 Z:0.0];
     }
     
