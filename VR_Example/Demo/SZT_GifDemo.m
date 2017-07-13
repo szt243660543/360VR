@@ -13,7 +13,11 @@
 
 @interface SZT_GifDemo()
 
-@property(nonatomic, strong)SZTLibrary *SZTLibrary;
+@property(nonatomic, strong)SZTLibrary *sztLibrary;
+
+@property(nonatomic, strong)SZTGif *gif_local;
+
+@property(nonatomic, strong)SZTGif *gif_net;
 
 @end
 
@@ -25,12 +29,12 @@
     
     [self loadButton];
     
-    self.SZTLibrary = [[SZTLibrary alloc] initWithController:self];
+    self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     
     // 背景图
     SZTImageView * back = [[SZTImageView alloc] initWithMode:SZTVR_SPHERE];
     [back setupTextureWithImage:[UIImage imageNamed:@"vrbackbround.jpg"]];
-    [self.SZTLibrary addSubObject:back];
+    [self.sztLibrary addSubObject:back];
 }
 
 - (void)loadButton
@@ -50,29 +54,29 @@
 
 - (void)addButton1
 {
-    SZTGif *gif = [[SZTGif alloc] init];
-    gif.repeatTimes = 1;
+    _gif_net = [[SZTGif alloc] init];
+    _gif_net.repeatTimes = 1;
     NSURL * gif_url = [NSURL URLWithString:@"http://www.gifs.net/Animation11/Food_and_Drinks/Fruits/Apple_jumps.gif"];
     NSString *gifPath = [gif_url absoluteString];
-    [gif setupGifWithFileUrl:gifPath];
-    [gif setPosition:-5.0 Y:-3.0 Z:-15];
-    [gif gifDidFinishedCallback:^(SZTGif *gif) {
+    [_gif_net setupGifWithFileUrl:gifPath];
+    [_gif_net setPosition:-5.0 Y:-3.0 Z:-15];
+    [_gif_net gifDidFinishedCallback:^(SZTGif *gif) {
         NSLog(@"gif - 播放完毕回调");
     }];
-    [self.SZTLibrary addSubObject:gif];
+    [self.sztLibrary addSubObject:_gif_net];
 }
 
 - (void)addButton2
 {
-    SZTGif *gif = [[SZTGif alloc] init];
-    gif.repeatTimes = 1;
-    [gif setupGifWithGifName:@"gifTest.gif"];
-    [gif setObjectSize:600.0 Height:300.0];
-    [gif setPosition:4.0 Y:-3.0 Z:-15];
-    [gif gifDidFinishedCallback:^(SZTGif *gif) {
+    _gif_local = [[SZTGif alloc] init];
+    _gif_local.repeatTimes = 1;
+    [_gif_local setupGifWithGifName:@"gifTest.gif"];
+    [_gif_local setObjectSize:600.0 Height:300.0];
+    [_gif_local setPosition:4.0 Y:-3.0 Z:-15];
+    [_gif_local gifDidFinishedCallback:^(SZTGif *gif) {
         NSLog(@"gif1 - 播放完毕回调");
     }];
-    [self.SZTLibrary addSubObject:gif];
+    [self.sztLibrary addSubObject:_gif_local];
 }
 
 @end
