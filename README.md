@@ -178,6 +178,14 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ![image](https://github.com/szt243660543/360VR/blob/master/keyboard.jpg )  </br>
 
 ### 15、更多高级控件 (more)
+1、粒子系统
+2、环形控件
+3、九宫格控件，根据头距自动上下滑动。
+4、耳机线控拾取
+5、储物盒控件
+6、视频预览控件（基于九宫格）
+
+功能不一一展示在这里了，有需要的加群讨论。
 
 # 编辑json脚本，加载vr场景 （非程序员也可以编辑vr app）
 
