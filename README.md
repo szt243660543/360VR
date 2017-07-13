@@ -207,11 +207,11 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
 Script specification：http://www.vrkongfu.com/doc/doc_en.html </br>
 
-项目测试：把脚本和资源放到app的更目录下 </br>
+项目测试：把脚本和资源放到app的根目录下 </br>
 json地址：【还未上传】</br>
 res地址：【还未上传】</br>
 
-Project testing: Put scripts and resources into the app directory </br>
+Project testing: Put scripts and resources in the root directory of app </br>
 scripts：【It hasn't been uploaded yet】</br>
 res：【It hasn't been uploaded yet】</br>
 
