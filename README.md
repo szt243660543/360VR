@@ -1,5 +1,5 @@
 # 360 VR SDK
-这是一个小型的VR库，可以快速帮助你构建VR应用程序。（项目包含ijkplayer framework 和资源，所以项目有点大，请耐心下载！）（约150MB）</br>
+这是一个小型的VR库，可以快速帮助你构建VR应用程序。（项目包含ijkplayer framework 和资源，所以项目有点大，请耐心下载！）（项目约150MB，sdk实际大小为9Mb）</br>
 This is a small VR library that can quickly help you build VR app. 
 (As the project contains the ijkplayer framework and resources, so the project a little big, please be patient to download!)(About 150Mb)
 
