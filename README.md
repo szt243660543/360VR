@@ -212,8 +212,8 @@ json地址：【还未上传】</br>
 res地址：【还未上传】</br>
 
 Project testing: Put scripts and resources into the app directory </br>
-scripts：【还未上传】</br>
-res：【还未上传】</br>
+scripts：【It hasn't been uploaded yet】</br>
+res：【It hasn't been uploaded yet】</br>
 
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
