@@ -179,9 +179,11 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ### 15、更多高级控件 (more)
 
-|# 编辑json脚本，加载vr场景 （非程序员也可以编辑vr app）|
+# 编辑json脚本，加载vr场景 （非程序员也可以编辑vr app）
+
+
+|可视化编辑器还在开发中，请先使用json脚本编辑。|
 |---------------|
-可视化编辑器还在开发中，请先使用json脚本编辑。
 
 ```
 
