@@ -207,9 +207,11 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ```
 
 脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
+脚本空模版：</br>
 Script specification：http://www.vrkongfu.com/doc/doc_en.html </br>
 
 项目测试：把脚本和资源放到app的根目录下 </br>
+Template：</br>
 脚本和资源地址：https://pan.baidu.com/s/1skAdqHZ </br>
 
 Project testing: Put scripts and resources in the root directory of app </br>
