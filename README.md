@@ -207,6 +207,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ```
 
 脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
+
 项目测试：把脚本和资源放到app的根目录下 </br>
 脚本和资源地址：https://pan.baidu.com/s/1skAdqHZ </br>
 脚本空模版：</br>
@@ -215,6 +216,8 @@ Script specification：http://www.vrkongfu.com/doc/doc_en.html </br>
 Project testing: Put scripts and resources in the root directory of app </br>
 scripts and resources：https://pan.baidu.com/s/1skAdqHZ</br>
 Template：</br>
+
+![image](https://github.com/szt243660543/360VR/blob/master/json_res.png )![image](https://github.com/szt243660543/360VR/blob/master/jsonpic.jpg )  </br>
 
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
