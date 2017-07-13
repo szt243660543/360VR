@@ -179,6 +179,14 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 
 ### 15、更多高级控件 (more)
 
+|-----------------------------|
+# 非程序员入口
+|-----------------------------|
+# 编辑json脚本，加载vr场景 （非程序员也可以编辑vr app）
+```
+
+```
+
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
 
