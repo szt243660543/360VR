@@ -194,14 +194,16 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 |---------------|
 
 ```
-    // create sdk
+    // create sdk
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     [self.sztLibrary setFocusPicking:YES]; // 开启热点交互
-
+    
     /*** json 脚本****/
-    script = [[ScriptUI alloc] initWithJsonName:@"supermarket.json"];
-    [script setVideoPlsyer:SZT_IJKPlayer];  // 脚本的播放器使用ijkplayer/avplayer
-    [self.sztLibrary addSubObject:script];  // 脚本添加到sdk中
+    NSString *path = [NSString stringWithFormat:@"%@/%@",SANDBOXPATH, @"supermarket.json"];
+    
+    script = [[ScriptUI alloc] initWithSandboxPath:path]; 
+    [script setVideoPlayer:SZT_IJKPlayer]; // 脚本的播放器使用ijkplayer/avplayer
+    [self.sztLibrary addSubObject:script];
 ```
 
 脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
