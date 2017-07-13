@@ -204,7 +204,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
     [self.sztLibrary addSubObject:script];  // 脚本添加到sdk中
 ```
 
-脚本规范查看：【还未上传】</br>
+脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
 
 项目测试：把脚本和资源放到app的更目录下 </br>
 json地址：【还未上传】</br>
