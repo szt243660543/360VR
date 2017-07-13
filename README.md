@@ -1,5 +1,5 @@
 # 360 VR SDK
-这是一个小型的VR库，可以快速帮助你构建VR应用程序。（项目包含ijkplayer framework 和资源，所以项目有点大，请耐心下载！）（约150MB）</br>
+这是一个小型的VR库，可以快速帮助你构建VR应用程序。（项目包含ijkplayer framework 和资源，所以项目有点大，请耐心下载！）（项目约150MB，sdk实际大小为9Mb）</br>
 This is a small VR library that can quickly help you build VR app. 
 (As the project contains the ijkplayer framework and resources, so the project a little big, please be patient to download!)(About 150Mb)
 
@@ -194,24 +194,27 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 |---------------|
 
 ```
-    // create sdk
+    // create sdk
     self.sztLibrary = [[SZTLibrary alloc] initWithController:self];
     [self.sztLibrary setFocusPicking:YES]; // 开启热点交互
-
+    
     /*** json 脚本****/
-    script = [[ScriptUI alloc] initWithJsonName:@"supermarket.json"];
-    [script setVideoPlsyer:SZT_IJKPlayer];  // 脚本的播放器使用ijkplayer/avplayer
-    [self.sztLibrary addSubObject:script];  // 脚本添加到sdk中
+    NSString *path = [NSString stringWithFormat:@"%@/%@",SANDBOXPATH, @"supermarket.json"];
+    
+    script = [[ScriptUI alloc] initWithSandboxPath:path]; 
+    [script setVideoPlayer:SZT_IJKPlayer]; // 脚本的播放器使用ijkplayer/avplayer
+    [self.sztLibrary addSubObject:script];
 ```
 
 脚本规范查看：http://www.vrkongfu.com/doc/doc_zh.html </br>
-Script specification：http://www.vrkongfu.com/doc/doc_en.html </br>
-
 项目测试：把脚本和资源放到app的根目录下 </br>
 脚本和资源地址：https://pan.baidu.com/s/1skAdqHZ </br>
+脚本空模版：</br>
 
+Script specification：http://www.vrkongfu.com/doc/doc_en.html </br>
 Project testing: Put scripts and resources in the root directory of app </br>
 scripts and resources：https://pan.baidu.com/s/1skAdqHZ</br>
+Template：</br>
 
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
