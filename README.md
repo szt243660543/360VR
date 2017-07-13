@@ -196,11 +196,11 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
     [self.sztLibrary addSubObject:script];  // 脚本添加到sdk中
 ```
 
-脚本规范查看：【还未上传】
+脚本规范查看：【还未上传】</br>
 
-项目测试：把脚本和资源放到app的更目录下
-json地址：【还未上传】
-res地址：【还未上传】
+项目测试：把脚本和资源放到app的更目录下 </br>
+json地址：【还未上传】</br>
+res地址：【还未上传】</br>
 
 # AR 
 ![image](https://github.com/szt243660543/360VR/blob/master/ar.gif)
