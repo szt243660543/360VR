@@ -28,6 +28,7 @@
 		E5A234911F1757C400D68154 /* NSObject+MJ2KeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234841F1757C400D68154 /* NSObject+MJ2KeyValue.m */; };
 		E5A234921F1757C400D68154 /* NSObject+MJ2Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234861F1757C400D68154 /* NSObject+MJ2Property.m */; };
 		E5A234931F1757C400D68154 /* NSString+MJ2Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234881F1757C400D68154 /* NSString+MJ2Extension.m */; };
+		E5A234961F176E2200D68154 /* SZT_ProgressDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234951F176E2200D68154 /* SZT_ProgressDemo.m */; };
 		E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
 		E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
 		E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */; };
@@ -207,6 +208,8 @@
 		E5A234861F1757C400D68154 /* NSObject+MJ2Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJ2Property.m"; sourceTree = "<group>"; };
 		E5A234871F1757C400D68154 /* NSString+MJ2Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJ2Extension.h"; sourceTree = "<group>"; };
 		E5A234881F1757C400D68154 /* NSString+MJ2Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJ2Extension.m"; sourceTree = "<group>"; };
+		E5A234941F176E2200D68154 /* SZT_ProgressDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_ProgressDemo.h; sourceTree = "<group>"; };
+		E5A234951F176E2200D68154 /* SZT_ProgressDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_ProgressDemo.m; sourceTree = "<group>"; };
 		E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_LabelDemo.h; sourceTree = "<group>"; };
 		E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_LabelDemo.m; sourceTree = "<group>"; };
 		E5BDCDDC1F15E55D006F5749 /* SZT_TouchDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_TouchDemo.h; sourceTree = "<group>"; };
@@ -475,6 +478,8 @@
 				E5E559A51F14D3D7008559D8 /* SZT_DistortionDemo.m */,
 				E56DF8861F15C45100780FCC /* SZT_3DAudio.h */,
 				E56DF8851F15C45100780FCC /* SZT_3DAudio.m */,
+				E5A234941F176E2200D68154 /* SZT_ProgressDemo.h */,
+				E5A234951F176E2200D68154 /* SZT_ProgressDemo.m */,
 				E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */,
 				E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */,
 				E5BDCDDC1F15E55D006F5749 /* SZT_TouchDemo.h */,
@@ -982,6 +987,7 @@
 				E5541A711F14B75000035C20 /* BaseViewControllerDemo.m in Sources */,
 				E5A2348F1F1757C400D68154 /* NSObject+MJ2Class.m in Sources */,
 				E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */,
+				E5A234961F176E2200D68154 /* SZT_ProgressDemo.m in Sources */,
 				E5A2348D1F1757C400D68154 /* MJ2PropertyKey.m in Sources */,
 				E5A2344F1F17563000D68154 /* SZT_JsonDemo.m in Sources */,
 				E5A234931F1757C400D68154 /* NSString+MJ2Extension.m in Sources */,

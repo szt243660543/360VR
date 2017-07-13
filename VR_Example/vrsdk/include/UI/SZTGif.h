@@ -20,8 +20,7 @@ typedef void(^gifDidFinishedBlockParam)(SZTGif *);
 
 /**
  * 网路下载gif图并显示
- * @param fileUrl 图片路径
- * @param 本地路径／网络路径 自动识别加载
+ * @param fileUrl 图片路径 本地路径／网络路径 自动识别加载
  */
 - (void)setupGifWithFileUrl:(NSString *)fileUrl;
 
@@ -33,13 +32,13 @@ typedef void(^gifDidFinishedBlockParam)(SZTGif *);
 
 /**
  * 本地gif图
- * @param gifName gif path
+ * @param pathName  gifPath
  */
 - (void)setupGifWithGifPath:(NSString *)pathName;
 
 /**
  * 用图片序列图加载gif动画
- * @param frameImages 图片名数组
+ * @param frameNames 图片名数组
  * @param time 播放序列帧动画总时间
  */
 - (void)setupGifViewWithFrames:(NSArray *)frameNames playTime:(float)time;

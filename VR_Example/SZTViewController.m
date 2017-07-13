@@ -21,6 +21,7 @@
 #import "SZT_TouchDemo.h"
 #import "SZT_TextViewDemo.h"
 #import "SZT_JsonDemo.h"
+#import "SZT_ProgressDemo.h"
 
 @interface SZTViewController ()
 
@@ -129,7 +130,8 @@
         SZT_LabelDemo *label = [[SZT_LabelDemo alloc] init];
         [self presentViewController:label animated:YES completion:nil];
     }else if (indexPath.row == 12){
-        
+        SZT_ProgressDemo *progress = [[SZT_ProgressDemo alloc] init];
+        [self presentViewController:progress animated:YES completion:nil];
     }else if (indexPath.row == 13){
         SZT_TouchDemo *touch = [[SZT_TouchDemo alloc] init];
         [self presentViewController:touch animated:YES completion:nil];
