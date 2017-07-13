@@ -114,6 +114,7 @@ typedef NS_ENUM(NSInteger, SZTModeInteractive) {
 ![image](https://github.com/szt243660543/360VR/blob/master/IMG_5422.PNG )  </br>
 
 ### 7、Gif / APng动图加载 (load gif or aPng)
+![image](https://github.com/szt243660543/360VR/blob/master/gif.gif )  </br>
 
 ### 8、Obj模型加载 / MD2模型加载 (load Obj model or MD2 model)
 ![image](https://github.com/szt243660543/360VR/blob/master/objmd2.gif )  </br>
