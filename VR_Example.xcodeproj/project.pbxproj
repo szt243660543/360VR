@@ -16,6 +16,18 @@
 		E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5541A701F14B74500035C20 /* SZT_AVPlayerDemo.m */; };
 		E56DF8871F15C46200780FCC /* SZT_3DAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = E56DF8851F15C45100780FCC /* SZT_3DAudio.m */; };
 		E56DF8891F15C5AF00780FCC /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E56DF8881F15C5A600780FCC /* sound.mp3 */; };
+		E5A2344F1F17563000D68154 /* SZT_JsonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2344E1F17563000D68154 /* SZT_JsonDemo.m */; };
+		E5A234891F1757C400D68154 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5A234731F1757C400D68154 /* Info.plist */; };
+		E5A2348A1F1757C400D68154 /* MJ2ExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234761F1757C400D68154 /* MJ2ExtensionConst.m */; };
+		E5A2348B1F1757C400D68154 /* MJ2Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234781F1757C400D68154 /* MJ2Foundation.m */; };
+		E5A2348C1F1757C400D68154 /* MJ2Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2347A1F1757C400D68154 /* MJ2Property.m */; };
+		E5A2348D1F1757C400D68154 /* MJ2PropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2347C1F1757C400D68154 /* MJ2PropertyKey.m */; };
+		E5A2348E1F1757C400D68154 /* MJ2PropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2347E1F1757C400D68154 /* MJ2PropertyType.m */; };
+		E5A2348F1F1757C400D68154 /* NSObject+MJ2Class.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234801F1757C400D68154 /* NSObject+MJ2Class.m */; };
+		E5A234901F1757C400D68154 /* NSObject+MJ2Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234821F1757C400D68154 /* NSObject+MJ2Coding.m */; };
+		E5A234911F1757C400D68154 /* NSObject+MJ2KeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234841F1757C400D68154 /* NSObject+MJ2KeyValue.m */; };
+		E5A234921F1757C400D68154 /* NSObject+MJ2Property.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234861F1757C400D68154 /* NSObject+MJ2Property.m */; };
+		E5A234931F1757C400D68154 /* NSString+MJ2Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A234881F1757C400D68154 /* NSString+MJ2Extension.m */; };
 		E5BDCD2A1F15CE4B006F5749 /* libVRSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E559701F14C482008559D8 /* libVRSDK.a */; };
 		E5BDCD2B1F15CE50006F5749 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5593A1F14C482008559D8 /* IJKMediaFramework.framework */; };
 		E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */; };
@@ -171,6 +183,30 @@
 		E56DF8851F15C45100780FCC /* SZT_3DAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZT_3DAudio.m; sourceTree = "<group>"; };
 		E56DF8861F15C45100780FCC /* SZT_3DAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZT_3DAudio.h; sourceTree = "<group>"; };
 		E56DF8881F15C5A600780FCC /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		E5A2344D1F17563000D68154 /* SZT_JsonDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_JsonDemo.h; sourceTree = "<group>"; };
+		E5A2344E1F17563000D68154 /* SZT_JsonDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_JsonDemo.m; sourceTree = "<group>"; };
+		E5A234731F1757C400D68154 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A234741F1757C400D68154 /* MJ2Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2Extension.h; sourceTree = "<group>"; };
+		E5A234751F1757C400D68154 /* MJ2ExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2ExtensionConst.h; sourceTree = "<group>"; };
+		E5A234761F1757C400D68154 /* MJ2ExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJ2ExtensionConst.m; sourceTree = "<group>"; };
+		E5A234771F1757C400D68154 /* MJ2Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2Foundation.h; sourceTree = "<group>"; };
+		E5A234781F1757C400D68154 /* MJ2Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJ2Foundation.m; sourceTree = "<group>"; };
+		E5A234791F1757C400D68154 /* MJ2Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2Property.h; sourceTree = "<group>"; };
+		E5A2347A1F1757C400D68154 /* MJ2Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJ2Property.m; sourceTree = "<group>"; };
+		E5A2347B1F1757C400D68154 /* MJ2PropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2PropertyKey.h; sourceTree = "<group>"; };
+		E5A2347C1F1757C400D68154 /* MJ2PropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJ2PropertyKey.m; sourceTree = "<group>"; };
+		E5A2347D1F1757C400D68154 /* MJ2PropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJ2PropertyType.h; sourceTree = "<group>"; };
+		E5A2347E1F1757C400D68154 /* MJ2PropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJ2PropertyType.m; sourceTree = "<group>"; };
+		E5A2347F1F1757C400D68154 /* NSObject+MJ2Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJ2Class.h"; sourceTree = "<group>"; };
+		E5A234801F1757C400D68154 /* NSObject+MJ2Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJ2Class.m"; sourceTree = "<group>"; };
+		E5A234811F1757C400D68154 /* NSObject+MJ2Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJ2Coding.h"; sourceTree = "<group>"; };
+		E5A234821F1757C400D68154 /* NSObject+MJ2Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJ2Coding.m"; sourceTree = "<group>"; };
+		E5A234831F1757C400D68154 /* NSObject+MJ2KeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJ2KeyValue.h"; sourceTree = "<group>"; };
+		E5A234841F1757C400D68154 /* NSObject+MJ2KeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJ2KeyValue.m"; sourceTree = "<group>"; };
+		E5A234851F1757C400D68154 /* NSObject+MJ2Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJ2Property.h"; sourceTree = "<group>"; };
+		E5A234861F1757C400D68154 /* NSObject+MJ2Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJ2Property.m"; sourceTree = "<group>"; };
+		E5A234871F1757C400D68154 /* NSString+MJ2Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJ2Extension.h"; sourceTree = "<group>"; };
+		E5A234881F1757C400D68154 /* NSString+MJ2Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJ2Extension.m"; sourceTree = "<group>"; };
 		E5BDCDD91F15DBA7006F5749 /* SZT_LabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_LabelDemo.h; sourceTree = "<group>"; };
 		E5BDCDDA1F15DBA7006F5749 /* SZT_LabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZT_LabelDemo.m; sourceTree = "<group>"; };
 		E5BDCDDC1F15E55D006F5749 /* SZT_TouchDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZT_TouchDemo.h; sourceTree = "<group>"; };
@@ -445,8 +481,39 @@
 				E5BDCDDD1F15E55D006F5749 /* SZT_TouchDemo.m */,
 				E5BDCDDF1F162B63006F5749 /* SZT_TextViewDemo.h */,
 				E5BDCDE01F162B63006F5749 /* SZT_TextViewDemo.m */,
+				E5A2344D1F17563000D68154 /* SZT_JsonDemo.h */,
+				E5A2344E1F17563000D68154 /* SZT_JsonDemo.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		E5A234721F1757C400D68154 /* MJ2Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E5A234731F1757C400D68154 /* Info.plist */,
+				E5A234741F1757C400D68154 /* MJ2Extension.h */,
+				E5A234751F1757C400D68154 /* MJ2ExtensionConst.h */,
+				E5A234761F1757C400D68154 /* MJ2ExtensionConst.m */,
+				E5A234771F1757C400D68154 /* MJ2Foundation.h */,
+				E5A234781F1757C400D68154 /* MJ2Foundation.m */,
+				E5A234791F1757C400D68154 /* MJ2Property.h */,
+				E5A2347A1F1757C400D68154 /* MJ2Property.m */,
+				E5A2347B1F1757C400D68154 /* MJ2PropertyKey.h */,
+				E5A2347C1F1757C400D68154 /* MJ2PropertyKey.m */,
+				E5A2347D1F1757C400D68154 /* MJ2PropertyType.h */,
+				E5A2347E1F1757C400D68154 /* MJ2PropertyType.m */,
+				E5A2347F1F1757C400D68154 /* NSObject+MJ2Class.h */,
+				E5A234801F1757C400D68154 /* NSObject+MJ2Class.m */,
+				E5A234811F1757C400D68154 /* NSObject+MJ2Coding.h */,
+				E5A234821F1757C400D68154 /* NSObject+MJ2Coding.m */,
+				E5A234831F1757C400D68154 /* NSObject+MJ2KeyValue.h */,
+				E5A234841F1757C400D68154 /* NSObject+MJ2KeyValue.m */,
+				E5A234851F1757C400D68154 /* NSObject+MJ2Property.h */,
+				E5A234861F1757C400D68154 /* NSObject+MJ2Property.m */,
+				E5A234871F1757C400D68154 /* NSString+MJ2Extension.h */,
+				E5A234881F1757C400D68154 /* NSString+MJ2Extension.m */,
+			);
+			path = MJ2Extension;
 			sourceTree = "<group>";
 		};
 		E5BDCDE31F162CA2006F5749 /* keyboard */ = {
@@ -634,6 +701,7 @@
 		E5E559481F14C482008559D8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E5A234721F1757C400D68154 /* MJ2Extension */,
 				E5E559491F14C482008559D8 /* Categorys */,
 				E5E5594D1F14C482008559D8 /* JsonModel */,
 			);
@@ -815,6 +883,7 @@
 				E5BDCE621F162CA3006F5749 /* b_7.png in Resources */,
 				E5BDCE9B1F162CA3006F5749 /* n_28.png in Resources */,
 				E5BDCEA11F162CA3006F5749 /* n_6.png in Resources */,
+				E5A234891F1757C400D68154 /* Info.plist in Resources */,
 				E5BDCE5F1F162CA3006F5749 /* b_4.png in Resources */,
 				E5BDCE541F162CA3006F5749 /* b_21.png in Resources */,
 				E5BDCE751F162CA3006F5749 /* s_21.png in Resources */,
@@ -890,6 +959,7 @@
 			files = (
 				E56DF8871F15C46200780FCC /* SZT_3DAudio.m in Sources */,
 				E5E559A61F14D3E1008559D8 /* SZT_DistortionDemo.m in Sources */,
+				E5A2348C1F1757C400D68154 /* MJ2Property.m in Sources */,
 				E5E5599B1F14D166008559D8 /* SZT_3DModel.m in Sources */,
 				E5E559941F14CD71008559D8 /* SZT_GifDemo.m in Sources */,
 				E5E559911F14CAB4008559D8 /* SZT_ImageViewDemo.m in Sources */,
@@ -904,16 +974,26 @@
 				E5E5597C1F14C4A2008559D8 /* objects.m in Sources */,
 				E5E5597D1F14C4A2008559D8 /* properties.m in Sources */,
 				E5E5597E1F14C4A2008559D8 /* scene.m in Sources */,
+				E5A234901F1757C400D68154 /* NSObject+MJ2Coding.m in Sources */,
 				E5E5597F1F14C4A2008559D8 /* vrkongfu.m in Sources */,
 				E5E559801F14C4A2008559D8 /* widget.m in Sources */,
 				E5E559381F14C35B008559D8 /* SZT_ModeDisplayDemo.m in Sources */,
 				E5E559351F14C0CF008559D8 /* SZT_IJKPlayerDemo.m in Sources */,
 				E5541A711F14B75000035C20 /* BaseViewControllerDemo.m in Sources */,
+				E5A2348F1F1757C400D68154 /* NSObject+MJ2Class.m in Sources */,
 				E5541A721F14B75000035C20 /* SZT_AVPlayerDemo.m in Sources */,
+				E5A2348D1F1757C400D68154 /* MJ2PropertyKey.m in Sources */,
+				E5A2344F1F17563000D68154 /* SZT_JsonDemo.m in Sources */,
+				E5A234931F1757C400D68154 /* NSString+MJ2Extension.m in Sources */,
 				E5541A101F14B45500035C20 /* main.m in Sources */,
 				E5541A181F14B4A100035C20 /* SZTViewController.m in Sources */,
 				E5BDCDDB1F15DBA7006F5749 /* SZT_LabelDemo.m in Sources */,
+				E5A2348E1F1757C400D68154 /* MJ2PropertyType.m in Sources */,
+				E5A2348B1F1757C400D68154 /* MJ2Foundation.m in Sources */,
+				E5A234911F1757C400D68154 /* NSObject+MJ2KeyValue.m in Sources */,
 				E5541A021F14B45500035C20 /* AppDelegate.m in Sources */,
+				E5A234921F1757C400D68154 /* NSObject+MJ2Property.m in Sources */,
+				E5A2348A1F1757C400D68154 /* MJ2ExtensionConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

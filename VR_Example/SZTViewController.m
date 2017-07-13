@@ -20,6 +20,7 @@
 #import "SZT_LabelDemo.h"
 #import "SZT_TouchDemo.h"
 #import "SZT_TextViewDemo.h"
+#import "SZT_JsonDemo.h"
 
 @interface SZTViewController ()
 
@@ -34,7 +35,7 @@
 
 #pragma mark - 数据源
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 17;
+    return 18;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,6 +80,8 @@
         cell.textLabel.text = @"输入框控件";
     }else if (indexPath.row == 15){
         cell.textLabel.text = @"更多高级控件";
+    }else if (indexPath.row == 16){
+        cell.textLabel.text = @"json脚本加载vr场景";
     }else{
         cell.textLabel.text = @"////*****VR_SDK_Demo*****////";
     }
@@ -135,6 +138,9 @@
         [self presentViewController:input animated:YES completion:nil];
     }else if (indexPath.row == 15){
         
+    }else if(indexPath.row == 16){
+        SZT_JsonDemo *json = [[SZT_JsonDemo alloc] init];
+        [self presentViewController:json animated:YES completion:nil];
     }
 }
 

@@ -29,12 +29,8 @@
     
     [self loadButton];
     
-    [self backBtn];
-    
-    
     self.SZTLibrary = [[SZTLibrary alloc] initWithController:self];
     
-    // 添加左右视图
     SZTImageView * back = [[SZTImageView alloc] initWithMode:SZTVR_SPHERE];
     [back setupTextureWithImage:[UIImage imageNamed:@"placeholderBack.jpg"]];
     [self.SZTLibrary addSubObject:back];

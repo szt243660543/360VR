@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, VideoPLayerMode) {
 /** 
  * 设置脚本内部视频播放器类型 -- 默认为IJkplayer
  */
-- (void)setVideoPlsyer:(VideoPLayerMode)playerMode;
+- (void)setVideoPlayer:(VideoPLayerMode)playerMode;
 
 /** 
  * 传入热更新json脚本 -- 后续直播使用，还未实现
