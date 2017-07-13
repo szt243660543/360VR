@@ -151,6 +151,7 @@ typedef NS_ENUM(NSInteger, SZTDistortion) {
 ![image](https://github.com/szt243660543/360VR/blob/master/label.gif )  </br>
 
 ### 12、进度条控件 （load Progress bar）
+![image](https://github.com/szt243660543/360VR/blob/master/progress.gif )  </br>
 
 ### 13、焦点拾取/点击拾取 （ray picking/touch picking）
 ```
