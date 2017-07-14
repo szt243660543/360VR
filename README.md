@@ -229,5 +229,5 @@ Template：</br>
 We will update SDK regularly.Welcome to join the group for discussion.
 * 邮箱 :sdk@360looker.com
 * QQ 群 :174962747
-* 公司地址 :http://www.vrkongfu.com/SDK
-* sdk下载地址 :sdk@360looker.com
+* 公司地址 :http://www.vrkongfu.com
+* sdk下载地址 :http://www.vrkongfu.com/SDK
