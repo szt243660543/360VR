@@ -1,6 +1,7 @@
 /*
  * IJKMediaPlayback.h
  *
+ * Copyright (c) 2013 Bilibili
  * Copyright (c) 2013 Zhang Rui <bbcallen@gmail.com>
  *
  * This file is part of ijkPlayer.
@@ -73,6 +74,7 @@ typedef NS_ENUM(NSInteger, IJKMPMovieTimeOption) {
 - (BOOL)isPlaying;
 - (void)shutdown;
 - (void)setPauseInBackground:(BOOL)pause;
+
 - (CVPixelBufferRef)framePixelbuffer;
 - (void)framePixelbufferLock;
 - (void)framePixelbufferUnlock;
@@ -98,6 +100,7 @@ typedef NS_ENUM(NSInteger, IJKMPMovieTimeOption) {
 @property (nonatomic, readonly) BOOL airPlayMediaActive;
 
 @property (nonatomic) float playbackRate;
+@property (nonatomic) float playbackVolume;
 
 - (UIImage *)thumbnailImageAtCurrentTime;
 
@@ -153,6 +156,8 @@ IJK_EXTERN NSString *const IJKMPMoviePlayerFirstAudioFrameRenderedNotification;
 IJK_EXTERN NSString *const IJKMPMoviePlayerDidSeekCompleteNotification;
 IJK_EXTERN NSString *const IJKMPMoviePlayerDidSeekCompleteTargetKey;
 IJK_EXTERN NSString *const IJKMPMoviePlayerDidSeekCompleteErrorKey;
+IJK_EXTERN NSString *const IJKMPMoviePlayerDidAccurateSeekCompleteCurPos;
+IJK_EXTERN NSString *const IJKMPMoviePlayerAccurateSeekCompleteNotification;
 
 @end
 
