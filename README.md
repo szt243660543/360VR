@@ -231,3 +231,6 @@ We will update SDK regularly.Welcome to join the group for discussion.
 * QQ 群 :174962747
 * 公司地址 :http://www.vrkongfu.com
 * sdk下载地址 :http://www.vrkongfu.com/SDK
+
+# QQ Group
+![image](https://github.com/szt243660543/360VR/blob/master/qq_group.jpg)
