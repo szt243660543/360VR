@@ -8,16 +8,6 @@
 
 #import "BaseViewControllerDemo.h"
 
-void swapt(float* width, float *height){
-    float temp = *width;
-    if((*width)>(*height)){
-        return;
-    }else{
-        (*width) = (*height);
-        (*height) = temp;
-    }
-}
-
 @interface BaseViewControllerDemo ()
 
 @end

@@ -1,0 +1,193 @@
+//
+//  SZTFishDome3D.m
+//  SZTVR_SDK
+//
+//  Created by szt on 2017/5/1.
+//  Copyright © 2017年 szt. All rights reserved.
+//
+
+#import "SZTFishDome3D.h"
+
+inline static double changeCircleX(double x, double y, double wd, double hd, double r1, double r2){
+    double r, theta, xS;
+    r = y/hd*(r2-r1) + r1;
+    theta = x/wd*2.0*ES_PI;
+    xS = r*cosf(theta);
+    return xS;
+}
+
+inline static double changeCircleY(double x, double y, double wd, double hd, double r1, double r2){
+    double r, theta, yS;
+    r = y/hd*(r2-r1)+r1;
+    theta = x/wd*2*ES_PI;
+    yS = r*sinf(theta);
+    return yS;
+}
+
+@interface SZTFishDome3D()
+{
+    float mRadius;
+    int   mSegmentsW;
+    int   mSegmentsH;
+    float mFactorW;
+    float mFactorH;
+    BOOL mMirrorTextureCoords;
+    
+    double mVerticalIndices;
+    double mHorizontalIndices;
+    
+    int   mWidth, mHeight;
+    double mLati, mLongti;
+    double mContentRation;
+    double mR1, mR2, mHd, mWd;
+}
+
+@end
+
+@implementation SZTFishDome3D
+
+- (void)setupVBO_Render:(float)radians
+{
+    [self CustomArcFace:radians segmentsW:150 segmentsH:75 factorW:2.0 factorH:0.67];
+    
+    [self build:1440.0 height:1440.0 contentRatio:1.0];
+    
+    [super setupVBO];
+}
+
+- (void)CustomArcFace:(float)radius segmentsW:(int)segmentsW segmentsH:(int)segmentsH factorW:(float)factorW factorH:(float)factorH{
+    if(factorH <0) factorH = 0;
+    if(factorH >2) factorH = 2;
+    
+    if(factorW < 0) factorW = 0;
+    if(factorW >2) factorW = 2;
+    
+    mRadius = radius;
+    mSegmentsW = segmentsW;
+    mSegmentsH = segmentsH;
+    mFactorW = factorW;
+    mFactorH = factorH;
+}
+
+- (void)build:(float)width height:(float)height contentRatio:(float)ratio
+{
+    mWidth = width;
+    mHeight = height;
+    mContentRation = ratio;
+    
+    [self initParams];
+    
+    [self initDome];
+}
+
+- (void)initParams
+{
+    double dstWidth = mHeight * ES_PI;
+    double dstHeight = mHeight/2.0;
+    //将采样
+    mLati = dstWidth/mSegmentsW;
+    mLongti= dstHeight/mSegmentsH;
+    
+    mR1 = 0;
+    mR2 = dstHeight;
+    mHd = mR2 -mR1;
+    mWd = 2*ES_PI*mR2;
+}
+
+- (void)initDome
+{
+    int numVertices = (mSegmentsW + 1) * (mSegmentsH+ 1);
+    int numIndices = 2 * mSegmentsW * (mSegmentsH) * 3;
+    
+    int numPoints = numVertices * 3;
+    int numTexcoords = numVertices * 2;
+    
+    float* points = malloc ( sizeof(float) *  numPoints);
+    float* texcoords = malloc ( sizeof(float) *  numTexcoords);
+    short* indices = malloc ( sizeof(short) * numIndices);
+    
+    double phi = ES_PI/2.0;
+    double theta = -ES_PI/2.0;
+    
+    double uv[2];
+    double vertex[3];
+    
+    int    vStep = 0;
+    int    tStep = 0;
+    int    iStep = 0;
+    
+    for(int i = 0 ;  i<= mSegmentsH; i++){
+        phi = [self customVerticalArc:i];
+        
+        float ringRadius = -mRadius * (float)cosf(phi);
+        
+        for(int j = 0; j <= mSegmentsW; j++){
+            theta = [self customHorizontalArc:j];
+            float x = ringRadius*(float)sinf(theta); //X - axis;
+            float y = mRadius*(float)sinf(phi); //Y-axis;
+            float z = ringRadius*(float)cosf(theta); //Z -axis;
+            
+            points[vStep++] = x;//2.0f*j/mSegmentsW -1f;
+            points[vStep++] = y;//2.0f*i/mSegmentsH - 1f;
+            points[vStep++] = z;//0;
+            
+            vertex[0] = z;
+            vertex[1] = y;
+            vertex[2] = z;
+            
+            [self customTextureCoords:vertex uv:uv];
+            
+            //For stereo just this has been changed
+            texcoords[tStep++] = (float) uv[0];
+            texcoords[tStep++] = (float) uv[1];
+        }
+    }
+    
+    for (int i = 0; i < mSegmentsH; i++){
+        for (int j = 0; j < mSegmentsW; j++) {
+            //first triangle
+            indices[iStep++] = (short) (i * (mSegmentsW + 1) + j); //upper point
+            indices[iStep++] = (short) ((i + 1) * (mSegmentsW + 1) + j); // lower point
+            indices[iStep++] = (short) (i * (mSegmentsW + 1) + j + 1); // upper-right point
+            
+            //second triangle
+            indices[iStep++] = (short) ((i + 1) * (mSegmentsW + 1) + j);
+            indices[iStep++] = (short) ((i + 1) * (mSegmentsW + 1) + j + 1); // lower-right point
+            indices[iStep++] = (short) (i * (mSegmentsW + 1) + j + 1);
+        }
+    }
+    
+    [self setIndicesBuffer:indices size:numIndices]; //object3D.setIndicesBuffer(indexBuffer);
+    [self setTextureBuffer:texcoords size:numTexcoords]; //object3D.setTexCoordinateBuffer(texBuffer);
+    [self setVertexBuffer:points size:numPoints]; //object3D.setVerticesBuffer(vertexBuffer);
+    [self setNumIndices:numIndices];
+}
+
+- (void)customTextureCoords:(double *)vertex uv:(double *)uv
+{
+    double xx = mHorizontalIndices*mLati;
+    double yy = mVerticalIndices*mLongti;
+    
+    uv[0] = changeCircleX(xx, yy, mWd, mHd, mR1, mR2);
+    uv[1] = changeCircleY(xx, yy, mWd, mHd, mR1, mR2) ;
+    
+    uv[0] /= mWidth/2.0;
+    uv[1] /= mHeight/2.0;
+    
+    uv[0] = (uv[0]*mContentRation + 1)*0.5;
+    uv[1] = (uv[1]*mContentRation + 1)*0.5;
+}
+
+- (double)customVerticalArc:(double)indice
+{
+    mVerticalIndices = indice;
+    return ES_PI/2.0 -  ((indice/mSegmentsH + 0.0)*ES_PI)*mFactorH;
+}
+
+- (double)customHorizontalArc:(double)indice
+{
+    mHorizontalIndices = indice;
+    return (indice/mSegmentsW*ES_PI)*mFactorW;
+}
+
+@end
